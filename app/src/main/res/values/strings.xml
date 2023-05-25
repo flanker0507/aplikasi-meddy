@@ -4,11 +4,22 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <!-- Content Description   -->
+    <!-- Content Desc Splashscreen   -->
     <string name="logo_splashscreen">Logo Splashscreen</string>
 
-    <!-- Content -->
+    <!-- Splash Screen -->
     <string name="logo_name">MEDDY</string>
+
+    <!-- Content Desc Onboarding 1 -->
+    <string name="img_background">Background Frame</string>
+    <string name="img_character1">Character Onboarding 1</string>
+    <string name="dot">Dot to Slide</string>
+    <string name="img_next1">Next 1</string>
+
+    <!-- Onboading 1 -->
+    <string name="lewati">Lewati</string>
+    <string name="desc_onboarding1">Pahami ragam obat dan cara pakainya sesuai dengan dosis demi kesehatan Anda.</string>
+
 
 
 </resources>
