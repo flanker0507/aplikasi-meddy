@@ -6,8 +6,6 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-
 
     <!-- Color Style Meddy -->
     <color name="primary">#1B708E</color>
@@ -15,4 +13,5 @@
     <color name="secondary">#F5F5F5</color>
     <color name="grey">#50979797</color>
     <color name="text">#000000</color>
+    <color name="white">#FFFFFFFF</color>
 </resources>
