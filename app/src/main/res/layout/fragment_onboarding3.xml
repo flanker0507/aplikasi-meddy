@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboarding3Fragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="342dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_12" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="253dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/img_8" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#1B708E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Cari informasi Apotek yang terdekat dengan mu."/>
+
+    <ImageView
+        android:id="@+id/imageButton1"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="150dp"
+        app:srcCompat="@drawable/img_15" />
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="85dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="570dp"
+        app:srcCompat="@drawable/img_3" />
+
+</RelativeLayout>
