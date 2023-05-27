@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Beranda"
+        android:id="@+id/beranda"
+        android:icon="@drawable/outline_home_24"/>
+    <item android:title="Cari"
+        android:id="@+id/cari"
+        android:icon="@drawable/outline_search_24"/>
+    <item android:title="Jadwal"
+        android:id="@+id/jadwal"
+        android:icon="@drawable/outline_calendar_month_24"/>
+    <item android:title="Konsultasi"
+        android:id="@+id/konsultasi"
+        android:icon="@drawable/outline_chat_24"/>
+</menu>
