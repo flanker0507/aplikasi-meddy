@@ -6,39 +6,85 @@
     android:layout_height="match_parent"
     tools:context=".LoginFragment">
 
+    <ImageView
+        android:layout_width="179dp"
+        android:layout_height="159dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="100dp"
+        android:src="@drawable/img_6" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="50dp"
+        android:text="Masuk"
+        android:backgroundTint="#1B708E"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="135dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginRight="50dp"
+        android:text="Belum punya akun?"
+        android:textSize="15sp"/>
+
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginRight="50dp"
+        android:text="Buat Sekarang"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginRight="10dp"
-        android:textColor="#1B708E"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:text="Sebagai apa kamu disini?" />
+        android:src="@drawable/img_32"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="30dp">
+    </ImageView>
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="358dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="150dp"
+    <EditText
+        android:id="@+id/editTextTextNamelAddress"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="285dp"
         android:layout_marginRight="50dp"
-        android:backgroundTint="#1B708E"
-        android:text="Pengguna"
+        android:hint="Nama Pengguna"
+        android:ems="10"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:background="@android:color/transparent"/>
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="358dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="280dp"
-        android:layout_marginRight="50dp"
-        android:backgroundTint="#1B708E"
-        android:text="Apoteker"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_33"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginRight="30dp">
+    </ImageView>
+
+
+    <EditText
+        android:id="@+id/editTextTextPasswordlAddress"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginRight="30dp"
+        android:hint="Kata Sandi"
+        android:ems="10"
+        android:background="@android:color/transparent"/>
+
 </RelativeLayout>

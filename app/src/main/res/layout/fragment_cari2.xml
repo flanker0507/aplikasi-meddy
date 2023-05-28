@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cari2Fragment"
+    android:background="#1B708E">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="411dp"
+        android:layout_height="776dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/img_19" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="69dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img_7" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="56dp"
+        android:text="MEDDY"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="8sp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:text="Lokasimu"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/img_20" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="45dp"
+        android:text="Rungkut Asri Timur"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="130dp"
+        android:text="Amoxicilin 500 mg"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="130dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="150dp"
+        android:text="Amoxicilin sirup"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="170dp"
+        android:text="Amoxicilin trihdrate"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="170dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="190dp"
+        android:text="Amoxicilin 500 mg tablet"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="190dp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/img_34" />
+
+    <EditText
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginTop="65.5dp"
+        android:layout_marginLeft="95dp"
+        android:text="Amoxicilin"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"/>
+
+
+</FrameLayout>
