@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
             when(it.itemId){
                 R.id.beranda -> replaceFragment(BerandaFragment())
-                R.id.cari -> replaceFragment(SearchFragment())
+                R.id.cari -> replaceFragment(CariFragment())
                 R.id.jadwal -> replaceFragment(JadwalFragment())
                 R.id.konsultasi -> replaceFragment(KonsultasiFragment())
             }
