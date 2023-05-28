@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DaftarFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="125dp"
+        android:src="@drawable/img_28" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:text="Nama depan"
+        android:textSize="20sp"
+        android:textColor="#979797"
+        android:textStyle="bold"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="195dp"
+        android:src="@drawable/img_28" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:text="Email Aktif"
+        android:textSize="20sp"
+        android:textColor="#979797"
+        android:textStyle="bold"
+        android:layout_marginTop="195dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="265dp"
+        android:src="@drawable/img_29" />
+
+    <EditText
+        android:id="@+id/nomor"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:text="Nomor Handphone"
+        android:textSize="20sp"
+        android:textColor="#979797"
+        android:textStyle="bold"
+        android:layout_marginTop="265dp"
+        android:layout_marginLeft="115dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/nomer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+62"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="275dp"
+        android:layout_marginLeft="50dp"/>
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="335dp"
+        android:src="@drawable/img_28" />
+
+    <EditText
+        android:id="@+id/ktsandi"
+        android:layout_width="290dp"
+        android:layout_height="49dp"
+        android:text="Kata Sandi"
+        android:textSize="20sp"
+        android:textColor="#979797"
+        android:textStyle="bold"
+        android:layout_marginTop="335dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="405dp"
+        android:src="@drawable/img_30" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="412.5dp"
+        android:src="@drawable/img_36" />
+
+    <EditText
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:text="Pilih Daerah Rungkut Asri"
+        android:textSize="20sp"
+        android:textColor="#979797"
+        android:textStyle="bold"
+        android:layout_marginTop="408dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayo Daftar!"
+        android:textSize="30sp"
+        android:textColor="#1B708E"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saya setuju dengan"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#979797"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Syarat dan ketentuan"
+        android:textSize="15sp"
+        android:textColor="#1B708E"
+        android:textStyle="bold"
+        android:layout_marginTop="464dp"
+        android:layout_marginLeft="215dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginRight="60dp"
+        android:text="daftar"
+        android:textSize="23sp"
+        android:backgroundTint="#1B708E"/>
+
+
+</FrameLayout>
