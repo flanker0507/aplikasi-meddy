@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_63"
+        android:layout_marginBottom="542dp"/>
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="match_parent"
+        android:layout_height="619dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/img_62" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profil"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/img_57" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maylani"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="165dp"/>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maylani123@gmail.com"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="185dp"/>
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="269dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="225dp"
+        android:backgroundt="@color/black"
+        android:src="@drawable/img_64" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="269dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="265dp"
+        android:backgroundt="@color/black"
+        android:src="@drawable/img_65" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="269dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="305dp"
+        android:backgroundt="@color/black"
+        android:src="@drawable/img_66" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="269dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="345dp"
+        android:backgroundt="@color/black"
+        android:src="@drawable/img_67" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="269dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="385dp"
+        android:backgroundt="@color/black"
+        android:src="@drawable/img_68" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="271dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="30dp"
+        android:text="Keluar"
+        android:textSize="16sp"
+        android:backgroundTint="#1B708E"/>
+
+    <ImageView
+        android:id="@+id/imageView47"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:src="@drawable/img_69"
+        android:layout_marginLeft="285dp"
+        android:layout_marginTop="110dp"/>
+</FrameLayout>

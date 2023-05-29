@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditAkunFragment">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="450dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="35dp"
+        android:src="@drawable/img_70" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:text="Maylani"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="105dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="35dp"
+        android:src="@drawable/img_71" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:text="myla232"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="195dp"
+        android:layout_marginLeft="105dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="35dp"
+        android:src="@drawable/img_72" />
+
+    <EditText
+        android:id="@+id/nomor"
+        android:layout_width="230dp"
+        android:layout_height="49dp"
+        android:text="maylani123@gmail.com"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="110dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="335dp"
+        android:src="@drawable/img_73" />
+
+    <EditText
+        android:id="@+id/ktsandi"
+        android:layout_width="290dp"
+        android:layout_height="49dp"
+        android:text="No Hp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="335dp"
+        android:layout_marginLeft="115dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="35dp"
+        android:src="@drawable/img_74" />
+
+    <EditText
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:text="Lokasi"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="408dp"
+        android:layout_marginLeft="115dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Akun"
+        android:textSize="30sp"
+        android:textColor="#1B708E"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"/>
+
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="40dp"
+        android:layout_height="23dp"
+        android:text="+62"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="345dp"
+        android:layout_marginLeft="50dp"/>
+
+    <ImageView
+        android:id="@+id/imageView48"
+        android:layout_width="40dp"
+        android:layout_height="29dp"
+        android:textSize="20sp"
+        android:textColor="#18191F"
+        android:textStyle="bold"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="320dp"
+        android:src="@drawable/img_75" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:textColor="#979797"
+        android:textStyle="bold"
+        android:layout_marginTop="415dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/img_76" />
+
+    <ImageView
+        android:id="@+id/button"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginRight="60dp"
+        android:textSize="23sp"
+        android:textStyle="normal"
+        android:background="@drawable/rounded_cornor" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginRight="60dp"
+        android:text="Edit"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</FrameLayout>
