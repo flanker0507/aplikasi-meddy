@@ -191,8 +191,8 @@
         android:id="@+id/textView12"
         android:layout_width="130dp"
         android:layout_height="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="290dp"
         android:text="Apotek Terdekat"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -200,21 +200,21 @@
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="390dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="10dp"
+        android:layout_width="411dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="320dp"
         android:layout_marginRight="5dp"
-        android:layout_marginTop="340dp"
         android:src="@drawable/img_24" />
 
-    <Button
+    <ImageView
         android:id="@+id/button"
-        android:layout_width="75dp"
-        android:layout_height="48dp"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
         android:layout_marginLeft="270dp"
-        android:layout_marginTop="357.5dp"
+        android:layout_marginTop="340dp"
         android:layout_marginRight="80dp"
-        android:backgroundTint="#1B708E"
+        android:src="@drawable/img_50"
         android:text="Buka"
         android:textSize="14sp" />
 
@@ -223,7 +223,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="362dp"
+        android:layout_marginTop="342dp"
         android:text="Apotek K-24 Rungkut"
         android:textStyle="bold"
         android:textColor="#1B708E"
@@ -234,7 +234,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="385dp"
+        android:layout_marginTop="365dp"
         android:text="Jl. Rungkut Madya No.213b"
         android:textStyle="normal"
         android:textColor="#1B708E"
@@ -242,10 +242,10 @@
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="390dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="440dp"
+        android:layout_width="411dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="420dp"
         android:layout_marginRight="40dp"
         android:src="@drawable/img_24" />
 
@@ -254,20 +254,20 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="462dp"
+        android:layout_marginTop="442dp"
         android:text="Apotek Pradhana"
         android:textStyle="bold"
         android:textColor="#1B708E"
         android:textSize="13sp"/>
 
-    <Button
+    <ImageView
         android:id="@+id/button2"
-        android:layout_width="75dp"
-        android:layout_height="48dp"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
         android:layout_marginLeft="270dp"
-        android:layout_marginTop="457.5dp"
+        android:layout_marginTop="440dp"
         android:layout_marginRight="80dp"
-        android:backgroundTint="#1B708E"
+        android:src="@drawable/img_50"
         android:text="Buka"
         android:textSize="14sp" />
 
@@ -276,7 +276,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="485dp"
+        android:layout_marginTop="465dp"
         android:text="Jl. Rungkut Asri Timur No.24"
         android:textStyle="normal"
         android:textColor="#1B708E"
@@ -284,10 +284,10 @@
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="390dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="540dp"
+        android:layout_width="411dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="520dp"
         android:layout_marginRight="40dp"
         android:src="@drawable/img_24" />
 
@@ -296,20 +296,20 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="562dp"
+        android:layout_marginTop="542dp"
         android:text="Apotek Setiabudi"
         android:textStyle="bold"
         android:textColor="#1B708E"
         android:textSize="13sp"/>
 
-    <Button
+    <ImageView
         android:id="@+id/button3"
-        android:layout_width="75dp"
-        android:layout_height="48dp"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
         android:layout_marginLeft="270dp"
-        android:layout_marginTop="557.5dp"
+        android:layout_marginTop="540dp"
         android:layout_marginRight="80dp"
-        android:backgroundTint="#1B708E"
+        android:src="@drawable/img_50"
         android:text="Buka"
         android:textSize="14sp" />
 
@@ -318,7 +318,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="585dp"
+        android:layout_marginTop="565dp"
         android:text="Jl. Rungkut Asri Timur No.1"
         android:textStyle="normal"
         android:textColor="#1B708E"
@@ -328,7 +328,7 @@
         android:layout_width="250dp"
         android:layout_height="30dp"
         android:src="@drawable/img_35"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="630dp"
         android:layout_marginLeft="80dp"
         android:layout_marginRight="50dp">
     </ImageView>
@@ -338,10 +338,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Lihat semua Apotek terdekat"
-        android:layout_marginTop="657dp"
+        android:layout_marginTop="637dp"
         android:layout_marginLeft="115dp"
         android:layout_marginRight="50dp"
         android:textSize="11sp"
         android:textStyle="bold"/>
+
 
 </FrameLayout>
