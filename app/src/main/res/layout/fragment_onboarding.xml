@@ -22,7 +22,7 @@
             android:layout_height="234dp"
             android:layout_marginHorizontal="48dp"
             android:layout_gravity="center"
-            android:src="@drawable/img_8"
+            android:src="@drawable/img_onboard_1"
             android:contentDescription="@string/img_character1"/>
     </FrameLayout>
 
