@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RincianFragment">
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juni,2023"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView82"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/img_117" />
+
+
+    <ImageView
+        android:id="@+id/imageView88"
+        android:layout_width="319dp"
+        android:layout_height="319dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_118" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rincian"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="60dp" />
+
+    <ImageView
+        android:id="@+id/imageView89"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/img_120"
+        android:layout_marginTop="320dp"/>
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sabtu, 03 Juni 2023"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/secondary"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="120dp" />
+
+    <ImageView
+        android:id="@+id/imageView90"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/img_120"
+        android:layout_marginTop="380dp"/>
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07.00"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/secondary"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="120dp" />
+
+    <ImageView
+        android:id="@+id/imageView91"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/img_120"
+        android:layout_marginTop="440dp"/>
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sebelum Makan"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/secondary"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="120dp" />
+
+    <ImageView
+        android:id="@+id/imageView92"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/img_120"
+        android:layout_marginTop="500dp"/>
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 tablet sisa"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/secondary"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="120dp" />
+
+    <ImageView
+        android:id="@+id/imageView93"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/img_120"
+        android:layout_marginTop="560dp"/>
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 tablet/dosis"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/secondary"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="120dp" />
+
+    <ImageView
+        android:id="@+id/imageView87"
+        android:layout_width="51dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="330dp"
+        android:src="@drawable/img_119" />
+
+
+</FrameLayout>

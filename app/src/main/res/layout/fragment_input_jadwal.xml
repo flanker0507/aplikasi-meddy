@@ -70,7 +70,7 @@
         android:layout_height="41dp"
         android:layout_marginLeft="125dp"
         android:layout_marginTop="670dp"
-        android:src="@drawable/img_110" />
+        android:src="@drawable/img_116" />
 
     <ImageView
         android:id="@+id/imageView80"
@@ -104,4 +104,52 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="18dp"
         android:src="@drawable/img_113" />
+
+    <ImageView
+        android:id="@+id/imageView83"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="560dp"
+        android:src="@drawable/img_114" />
+
+    <ImageView
+        android:id="@+id/imageView84"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="560dp"
+        android:src="@drawable/img_115" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:text="10"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="545dp"/>
+
+    <ImageView
+        android:id="@+id/imageView85"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="600dp"
+        android:src="@drawable/img_114" />
+
+    <ImageView
+        android:id="@+id/imageView86"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="600dp"
+        android:src="@drawable/img_115" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:text="1"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="585dp"/>
 </FrameLayout>
