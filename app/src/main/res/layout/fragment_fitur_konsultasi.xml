@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiturKonsultasiFragment"
+    android:background="#1B708E">
+
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="288dp"
+        android:layout_height="234dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/img_57" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="351dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="90dp"
+        android:text="Konsultasikan dengan Apoteker secara real time lewat aplikasi WhatsApp kamu"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView61"
+        android:layout_width="187dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/img_58" />
+</FrameLayout>
