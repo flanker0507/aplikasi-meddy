@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SyaratDanKetentuanFragment">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Syarat dan ketentuan"
+        android:textSize="30sp"
+        android:textColor="#1B708E"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="125dp"/>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="180dp"
+        android:text="Untuk dapat melakukan akses dan pada aplikasi Meddy, maka anda dengan ini menyatakan setuju terkait pada syarat dan ketentuan berikut :"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="240dp"
+        android:text="A. Aplikasi Meddy "
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="261dp"
+        android:text="Meddy adalah sistem informasi obat- obatan yang menyimpan informasi seperti dosis, dan kandungan"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="300dp"
+        android:text="B. Persyaratan dan Tata Cara Penggunaan "
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="321dp"
+        android:text="Aplikasi Meddy"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="341dp"
+        android:text="Menyatakan setuju terkait penggunaan aplikasi untuk mendapatkan informasi obat, konsultasi dengan apoteker, dan jadwal minum obat."
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+</FrameLayout>

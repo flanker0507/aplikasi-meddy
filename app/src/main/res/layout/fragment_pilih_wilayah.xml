@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PilihWilayahFragment">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/img_30" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="72.5dp"
+        android:src="@drawable/img_36" />
+
+    <EditText
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:text="Pilih Daerah di Kab. Bintan"
+        android:textSize="20sp"
+        android:textColor="#979797"
+        android:textStyle="bold"
+        android:layout_marginTop="68dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="125dp"
+        android:src="@drawable/img_28" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:text="Kecamatan Seri Kuala Lobam"
+        android:textSize="20sp"
+        android:textColor="#979797"
+        android:textStyle="bold"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="185dp"
+        android:src="@drawable/img_28" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:text="Kecamatan Bintan Utara"
+        android:textSize="20sp"
+        android:textColor="#979797"
+        android:textStyle="bold"
+        android:layout_marginTop="185dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="245dp"
+        android:src="@drawable/img_28" />
+
+    <EditText
+        android:id="@+id/ktsandi"
+        android:layout_width="290dp"
+        android:layout_height="49dp"
+        android:text="Kecamatan Teluk Bintan"
+        android:textSize="20sp"
+        android:textColor="#979797"
+        android:textStyle="bold"
+        android:layout_marginTop="245dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/imageView58"
+        android:layout_width="131dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="600dp"
+        android:src="@drawable/img_8" />
+
+</FrameLayout>

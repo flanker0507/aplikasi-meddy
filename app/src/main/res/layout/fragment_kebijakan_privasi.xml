@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KebijakanPrivasiFragment">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kebijakan Privasi"
+        android:textSize="30sp"
+        android:textColor="#1B708E"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="85dp"/>
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="342.5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/img_92" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="160dp"
+        android:text="Kami hanya akan mengumpulkan data yang relevan dan diperlukan untuk memberikan layanan kesehatan yang sesuai. Data pribadi yang mungkin kami kumpulkan termasuk informasi pribadi seperti nama, alamat, tanggal lahir, dan informasi medis yang relevan."
+        android:textSize="13sp"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="342.5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="240dp"
+        android:src="@drawable/img_93" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="300dp"
+        android:text="Data yang kami kumpulkan akan digunakan secara eksklusif untuk memberikan layanan kesehatan yang diminta oleh pengguna. Kami tidak akan menggunakan atau mengungkapkan data pengguna tanpa persetujuan mereka, kecuali jika diwajibkan oleh hukum."
+        android:textSize="13sp"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/imageView57"
+        android:layout_width="342.5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="395dp"
+        android:src="@drawable/img_94" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="455dp"
+        android:text="Data yang kami kumpulkan akan digunakan secara eksklusif untuk memberikan layanan kesehatan yang diminta oleh pengguna. Kami tidak akan menggunakan atau mengungkapkan data pengguna tanpa persetujuan mereka, kecuali jika diwajibkan oleh hukum."
+        android:textSize="13sp"
+        android:textColor="#000000"/>
+</FrameLayout>

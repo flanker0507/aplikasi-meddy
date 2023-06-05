@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".DaftarFragment">
 
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayo Daftar!"
+        android:textSize="30sp"
+        android:textColor="#1B708E"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"/>
 
     <ImageView
         android:id="@+id/imageView10"
@@ -121,17 +131,6 @@
         android:layout_marginTop="408dp"
         android:layout_marginLeft="55dp"
         android:background="@android:color/transparent"/>
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ayo Daftar!"
-        android:textSize="30sp"
-        android:textColor="#1B708E"
-        android:textStyle="bold"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="40dp"/>
 
     <CheckBox
         android:id="@+id/checkBox"

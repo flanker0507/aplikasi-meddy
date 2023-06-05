@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengaturanFragment">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengaturan"
+        android:textSize="30sp"
+        android:textColor="#1B708E"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="125dp"/>
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="342.5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/img_91" />
+
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="342.5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/img_90" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nada Dering Pengingat"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="168.2dp"
+        android:textColor="#000000"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Getar Pengingat"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="208.2dp"
+        android:textColor="#000000"/>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="195dp"/>
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akses Lokasi"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="368.2dp"
+        android:textColor="#000000"/>
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="355dp"/>
+
+
+
+
+
+
+</FrameLayout>
