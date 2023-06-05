@@ -28,7 +28,7 @@
     <string name="nama_obat">Valdres</string>
     <string name="waktu">12:00 PM</string>
 
-<!--    card Apotek Terdekat-->
+    <!--    card Apotek Terdekat-->
     <string-array name="nama_apotek">
         <item>Apotek Agatha Farma</item>
         <item>Apotek Kimia Farma 455</item>

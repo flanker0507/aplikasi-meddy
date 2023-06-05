@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformasiAkunFragment">
+
+    <TextView
+    android:id="@+id/textView20"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Informasi Akun"
+    android:textSize="30sp"
+    android:textColor="#1B708E"
+    android:textStyle="bold"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pengguna"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="333dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/img_9" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maylani"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kata Sandi"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="333dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/img_9" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Myla232"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="333dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="380dp"
+        android:src="@drawable/img_9" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="maylani123@gmail.com"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor Hp"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="333dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="480dp"
+        android:src="@drawable/img_9" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+6285731788873"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokasi"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="333dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="580dp"
+        android:src="@drawable/img_9" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+6285731788873"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="317dp"
+        android:layout_height="45dp"
+        android:src="@drawable/img_10"
+        android:layout_marginTop="660dp"
+        android:layout_marginLeft="40dp"/>
+</FrameLayout>
