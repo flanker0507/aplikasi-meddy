@@ -6,57 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".JadwalFragment">
 
-    <ImageView
-        android:id="@+id/imageView39"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/img_63"
-        android:layout_marginBottom="542dp"/>
-    <TextView
-        android:id="@+id/textView32"
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="125dp"
-        android:layout_marginTop="20dp"
-        android:text="MONITOR "
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:textColor="@color/white"/>
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="50dp"
-        android:text="KONSUMSI OBAT"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:textColor="@color/white"/>
-
-    <ImageView
-        android:id="@+id/imageView50"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:layout_marginTop="109dp"
-        android:src="@drawable/img_77" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="411dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="340dp"
-        android:layout_marginRight="5dp"
-        android:src="@drawable/img_79" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="351dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="480dp"
-        android:layout_marginRight="5dp"
-        android:src="@drawable/img_80" />
+        android:text="Ini fragment jadwal"
+        android:textSize="24sp"
+        android:layout_gravity="center"/>
 
 
 </FrameLayout>

@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.beranda -> replaceFragment(BerandaFragment())
                 R.id.cari -> replaceFragment(CariFragment())
                 R.id.jadwal -> replaceFragment(JadwalFragment())
-                R.id.konsultasi -> replaceFragment(KonsultasiFragment())
+                R.id.riwayat -> replaceFragment(KonsultasiFragment())
             }
             true
         }

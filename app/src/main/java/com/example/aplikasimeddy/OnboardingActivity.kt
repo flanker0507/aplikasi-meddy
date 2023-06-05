@@ -52,7 +52,7 @@ class OnboardingActivity : AppCompatActivity() {
         indicatorContainer.adapter = OnBoardIndicatorAdapter(onboardContents.size,
             movePageHandler = {position -> container.setCurrentItem(position)})
         setupIndicators()
-        moveToMainActivity()
+        moveLoginActivity()
     }
     private fun setupIndicators(){
         val indicators = arrayOfNulls<ImageView>(introSliderAdapter.itemCount)
@@ -61,7 +61,7 @@ class OnboardingActivity : AppCompatActivity() {
         layoutParams.setMargins(8, 0, 8, 0)
     }
 
-    private fun moveToMainActivity(){
+    private fun moveLoginActivity(){
         val image_view = findViewById<ImageView>(R.id.img_next_btn)
         image_view.setOnClickListener{
             val move = Intent(this, MainActivity::class.java)

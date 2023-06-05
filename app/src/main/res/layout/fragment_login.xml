@@ -15,7 +15,7 @@
         android:src="@drawable/img_6" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_login"
         android:layout_width="548dp"
         android:layout_height="50dp"
         android:layout_marginLeft="30dp"

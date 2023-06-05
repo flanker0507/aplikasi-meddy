@@ -5,15 +5,24 @@
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-        android:id="@+id/onboard_image"
-        android:layout_width="308dp"
-        android:layout_height="234dp"
-        android:layout_marginTop="56dp"
-        android:contentDescription=""
+    <FrameLayout
+        android:id="@+id/fl_onboard_container"
+        android:layout_width="match_parent"
+        android:layout_height="368dp"
+        android:background="@drawable/img_12"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:id="@+id/onboard_image"
+            android:layout_width="308dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="56dp"
+            android:layout_gravity="center"
+            android:contentDescription="" />
+
+
+    </FrameLayout>
 
     <TextView
         android:id="@+id/onboard_desc"
@@ -24,7 +33,7 @@
         android:fontFamily="@font/montserrat_semi_bold"
         android:textSize="20sp"
         android:textColor="@color/primary"
-        app:layout_constraintTop_toBottomOf="@+id/onboard_image"
+        app:layout_constraintTop_toBottomOf="@+id/fl_onboard_container"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
