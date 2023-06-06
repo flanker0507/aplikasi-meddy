@@ -13,7 +13,7 @@
     <color name="secondary">#F5F5F5</color>
     <color name="grey">#50979797</color>
     <color name="ice_blue">#D7E9FF</color>
-    <color name="soft_ice_blue">#F6FBFF</color>
+    <color name="soft_ice_blue">#EDF6FF</color>
     <color name="text">#000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
