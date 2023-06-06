@@ -1,16 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".KonsultasiFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView81"
+        android:layout_width="wrap_content"
+        android:layout_height="153dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/img_122" />
+
     <TextView
+        android:id="@+id/textView57"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Bagaimana cara memilih"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="apoteker?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/textView59"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ini fragment riwayat"
-        android:textSize="24sp"
-        android:layout_gravity="center"/>
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="198dp"
+        android:text="Pilih apotek terdekat atau apotek langganan anda "
+        android:textColor="#1B708E"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
+    <ImageView
+        android:id="@+id/imageView97"
+        android:layout_width="17dp"
+        android:layout_height="23dp"
+        android:src="@drawable/img_123"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="198dp"/>
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="228dp"
+        android:text="Pilih konseling"
+        android:textColor="#1B708E"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView98"
+        android:layout_width="17dp"
+        android:layout_height="23dp"
+        android:src="@drawable/img_124"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="228dp"/>
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="258dp"
+        android:text="Hubungi apoteker melalui kontak yang tersedia"
+        android:textColor="#1B708E"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView99"
+        android:layout_width="17dp"
+        android:layout_height="23dp"
+        android:src="@drawable/img_125"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="258dp"/>
+
+    <ImageView
+        android:id="@+id/imageView96"
+        android:layout_width="167dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="400dp"
+        android:src="@drawable/img_121" />
 </FrameLayout>

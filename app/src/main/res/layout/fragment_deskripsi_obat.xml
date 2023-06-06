@@ -16,15 +16,32 @@
     <ImageView
         android:id="@+id/imageView37"
         android:layout_width="wrap_content"
-        android:layout_height="348dp"
+        android:layout_height="438dp"
         android:layout_marginLeft="-2dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="280dp"
         android:src="@drawable/img_56" />
 
     <TextView
         android:id="@+id/textView42"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Amoxicilin"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="210dp"
+        android:textColor="#ED3636"/>
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="250 Mg/10 kaplet"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/black"/>
+
 
 </FrameLayout>
