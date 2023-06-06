@@ -64,7 +64,7 @@ class OnboardingActivity : AppCompatActivity() {
     private fun moveLoginActivity(){
         val image_view = findViewById<ImageView>(R.id.img_next_btn)
         image_view.setOnClickListener{
-            val move = Intent(this, MainActivity::class.java)
+            val move = Intent(this, LoginActivity::class.java)
             startActivity(move)
         }
     }
