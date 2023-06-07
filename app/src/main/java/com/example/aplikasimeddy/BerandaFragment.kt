@@ -65,7 +65,7 @@ class BerandaFragment : Fragment() {
                 }
             }
     }
-    fun OnViewCreated(view: View, savedInstanceState: Bundle?){
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?){
         super.onViewCreated(view, savedInstanceState)
         dataInitialize()
         val layoutManager = LinearLayoutManager(context)
@@ -74,6 +74,7 @@ class BerandaFragment : Fragment() {
         recyclerView.setHasFixedSize(true)
         adapter = ApotekTerdekatAdapter(apotekArrayList)
         recyclerView.adapter = adapter
+
     }
 
     private fun dataInitialize(){

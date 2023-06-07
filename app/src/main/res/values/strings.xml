@@ -25,8 +25,8 @@
     <string name="nama">Maylani</string>
     <string name="apotek_terdekat">Apotek Terdekat</string>
     <string name="pengingat">Pengingat</string>
-    <string name="nama_obat">Valdres</string>
-    <string name="waktu">12:00 PM</string>
+    <string name="nama_obat">Amoxicillin</string>
+    <string name="waktu">07:00 Pagi</string>
 
     <!--    card Apotek Terdekat-->
     <string-array name="nama_apotek">
@@ -147,4 +147,9 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="takaran_obat">1 x 250mg</string>
+    <string name="cd_icon_clock">Icon Clock</string>
+    <string name="cd_line">Line</string>
+    <string name="foto_obat">Foto Obat</string>
+    <string name="tv_apotek_terdekat">Apotek Terdekat</string>
 </resources>
