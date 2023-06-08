@@ -25,11 +25,11 @@ class BerandaFragment : Fragment() {
 
     private lateinit var adapter: ApotekTerdekatAdapter
     private lateinit var recyclerView: RecyclerView
-    private lateinit var apotekArrayList: ArrayList<ApotekTerdekat>
+    private var apotekArrayList = ArrayList<ApotekTerdekat>()
 
-    lateinit var namaApotek : Array<String>
-    lateinit var alamatApotek : Array<String>
-    lateinit var imgApotek : Array<Int>
+//    lateinit var namaApotek : Array<String>
+//    lateinit var alamatApotek : Array<String>
+//    lateinit var imgApotek : Array<Int>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -77,33 +77,17 @@ class BerandaFragment : Fragment() {
 
     }
 
-    private fun dataInitialize(){
-        apotekArrayList = arrayListOf<ApotekTerdekat>()
-
-        namaApotek = arrayOf(
-            getString(R.string.agatha_farma),
-            getString(R.string.kimia_farma_455),
-            getString(R.string.kimia_farma_bintan),
-            getString(R.string.mitra_husada)
-        )
-
-        alamatApotek = arrayOf(
-            getString(R.string.alamat_agatha_farma),
-            getString(R.string.alamat_kimia_farma_455),
-            getString(R.string.kimia_farma_bintan),
-            getString(R.string.alamat_mitra_husada)
-        )
-
-        imgApotek = arrayOf(
-            R.drawable.apotek_agatha_farma,
-            R.drawable.apotek_kimia_farma_455,
-            R.drawable.apotek_kimia_farma_bintan,
-            R.drawable.apotek_kimia_farma_bintan,
-        )
-
+    private fun dataInitialize(): ArrayList<ApotekTerdekat> {
+        val namaApotek = resources.getStringArray(R.array.nama_apotek)
+        val alamatApotek = resources.getStringArray(R.array.alamat_apotek)
+        val imgApotek = resources.obtainTypedArray(R.array.img_apotek)
         for (i in namaApotek.indices){
-            val apotekTerdekat = ApotekTerdekat(namaApotek[i],alamatApotek[i],imgApotek[i])
+            val apotekTerdekat = ApotekTerdekat(
+                namaApotek[i],
+                alamatApotek[i],
+                imgApotek.getResourceId(i, -1))
             apotekArrayList.add(apotekTerdekat)
         }
+        return apotekArrayList
     }
 }

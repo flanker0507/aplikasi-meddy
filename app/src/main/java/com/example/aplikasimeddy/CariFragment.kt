@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,6 +23,11 @@ class CariFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+
+    private lateinit var adapter: CariApotekTerdekatAdapter
+    private lateinit var recyclerView: RecyclerView
+    private val list = ArrayList<ApotekTerdekatCari>()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,5 +63,29 @@ class CariFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?){
+        super.onViewCreated(view, savedInstanceState)
+        getData()
+        val layoutManager = LinearLayoutManager(context)
+        recyclerView = view.findViewById(R.id.rv_card_cari_apotek_terdekat)
+        recyclerView.layoutManager = layoutManager
+        recyclerView.setHasFixedSize(true)
+        adapter = CariApotekTerdekatAdapter(list)
+        recyclerView.adapter = adapter
+
+    }
+    private fun getData(): ArrayList<ApotekTerdekatCari>{
+        val namaApotek = resources.getStringArray(R.array.nama_apotek)
+        val alamatApotek = resources.getStringArray(R.array.alamat_apotek)
+        for (i in namaApotek.indices) {
+            val listApotek = ApotekTerdekatCari(
+                namaApotek[i],
+                alamatApotek[i]
+            )
+            list.add(listApotek)
+        }
+        return list
     }
 }

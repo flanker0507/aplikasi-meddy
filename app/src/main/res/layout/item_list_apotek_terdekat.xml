@@ -52,7 +52,7 @@
             android:layout_height="25dp"
             android:layout_marginStart="136dp"
             android:layout_marginTop="12dp"
-            android:src="@drawable/img_50"
+            android:src="@drawable/img_btn_buka"
             app:layout_constraintStart_toEndOf="@+id/iv_apotek_terdekat"
             app:layout_constraintTop_toBottomOf="@+id/tv_alamat_apotek"/>
     </androidx.constraintlayout.widget.ConstraintLayout>

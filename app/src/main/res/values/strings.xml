@@ -57,6 +57,7 @@
         <item>@drawable/apotek_agatha_farma</item>
         <item>@drawable/apotek_kimia_farma_455</item>
         <item>@drawable/apotek_kimia_farma_bintan</item>
+        <item>@drawable/apotek_kimia_farma_bintan</item>
     </integer-array>
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -152,4 +153,11 @@
     <string name="cd_line">Line</string>
     <string name="foto_obat">Foto Obat</string>
     <string name="tv_apotek_terdekat">Apotek Terdekat</string>
+    <string name="meddy">MEDDY</string>
+    <string name="lokasimu">Lokasimu</string>
+    <string name="nama_lokasi">Teluk Sasah</string>
+    <string name="riwayat_pencarian">Riwayat Pencarian</string>
+    <string name="lihat_lainnya">Lihat lainnya</string>
+    <string name="lihat_semua_apotek_terdekat">Lihat semua Apotek terdekat</string>
+    <string name="icon_lokasi">icon_lokasi</string>
 </resources>

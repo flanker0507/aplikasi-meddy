@@ -1,347 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CariFragment">
 
-    <ImageView
-        android:id="@+id/imageView81"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_header_cari_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_logo_meddy"
+            android:layout_width="68dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/logo_name"
+            android:src="@drawable/img_logo_meddy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_meddy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meddy"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/white"
+            android:lineHeight="28dp"
+            android:textSize="8sp"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo_meddy"
+            app:layout_constraintStart_toStartOf="@+id/iv_logo_meddy"
+            app:layout_constraintEnd_toEndOf="@+id/iv_logo_meddy"/>
+
+        <TextView
+            android:id="@+id/tv_lokasimu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/lokasimu"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/white"
+            android:lineHeight="28dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_logo_meddy"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/iv_icon_lokasi"
+            android:layout_width="16dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/img_icon_lokasi"
+            android:contentDescription="@string/icon_lokasi"
+            app:layout_constraintStart_toStartOf="@+id/tv_lokasimu"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lokasimu"/>
+
+        <TextView
+            android:id="@+id/tv_nama_lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_lokasi"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_icon_lokasi"
+            app:layout_constraintTop_toTopOf="@+id/iv_icon_lokasi"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_icon_lokasi"/>
+
+        <SearchView
+            android:id="@+id/sv_search"
+            android:background="@drawable/bg_sv_beranda"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:queryHint="Cari nama obat, apotek"
+            android:iconifiedByDefault="false"
+            android:layout_marginTop="4dp"
+            android:layout_marginHorizontal="36dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_meddy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_riwayat_pencarian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-80dp"
-        android:src="@drawable/img_122" />
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/img_34" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/riwayat_pencarian"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:lineHeight="28dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_header_cari_1"/>
 
-    <EditText
-        android:id="@+id/textView21"
+    <TextView
+        android:id="@+id/tv_lihat_lainnya"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginTop="65.5dp"
-        android:layout_marginLeft="95dp"
-        android:hint="Cari obat, nama apotek, ..."
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/lihat_lainnya"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
         android:textSize="12sp"
-        android:textStyle="bold"
-        android:background="@android:color/transparent"/>
-
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="69dp"
-        android:layout_height="47dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/img_7" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="40dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="58dp"
-        android:layout_marginLeft="56dp"
-        android:text="MEDDY"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:textSize="8sp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_riwayat_pencarian"/>
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="15dp"
-        android:layout_marginLeft="105dp"
-        android:layout_marginTop="45dp"
-        android:src="@drawable/img_20" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="130dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="45dp"
-        android:text="Teluk Sasah"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:textSize="10sp"/>
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="130dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="20dp"
-        android:text="Lokasimu"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:textSize="15sp"/>
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="130dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="135dp"
-        android:text="Riwayat Pencarian"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="15sp"/>
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="130dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="160dp"
-        android:text="Amoxicilin"
-        android:textStyle="normal"
-        android:textColor="@color/black"
-        android:textSize="12sp"/>
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="10dp"
-        android:layout_marginLeft="360dp"
-        android:layout_marginTop="160dp"
-        android:src="@drawable/img_22" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="130dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="180dp"
-        android:text="Apotek Kimia Farma"
-        android:textStyle="normal"
-        android:textColor="@color/black"
-        android:textSize="12sp"/>
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="10dp"
-        android:layout_marginLeft="360dp"
-        android:layout_marginTop="180dp"
-        android:src="@drawable/img_22" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="130dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="200dp"
-        android:text="Apotek Pradhana"
-        android:textStyle="normal"
-        android:textColor="@color/black"
-        android:textSize="12sp"/>
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="10dp"
-        android:layout_marginLeft="360dp"
-        android:layout_marginTop="200dp"
-        android:src="@drawable/img_22" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="130dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="220dp"
-        android:text="Siladex"
-        android:textStyle="normal"
-        android:textColor="@color/black"
-        android:textSize="12sp"/>
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="10dp"
-        android:layout_marginLeft="360dp"
-        android:layout_marginTop="220dp"
-        android:src="@drawable/img_22" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="130dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="250dp"
-        android:text="Lihat lainnya"
-        android:textStyle="normal"
-        android:textColor="@color/black"
-        android:textSize="12sp"/>
-
-    <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/iv_open_down"
         android:layout_width="20dp"
         android:layout_height="15dp"
-        android:layout_marginLeft="220dp"
-        android:layout_marginTop="251dp"
-        android:src="@drawable/img_23" />
+        android:src="@drawable/img_23"
+        app:layout_constraintStart_toEndOf="@+id/tv_lihat_lainnya"
+        app:layout_constraintTop_toTopOf="@+id/tv_lihat_lainnya"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_lihat_lainnya"/>
 
     <TextView
-        android:id="@+id/textView12"
-        android:layout_width="130dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="290dp"
-        android:text="Apotek Terdekat"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="15sp"/>
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="411dp"
-        android:layout_height="90dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="320dp"
-        android:layout_marginRight="5dp"
-        android:src="@drawable/img_24" />
-
-    <ImageView
-        android:id="@+id/button"
-        android:layout_width="85dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="270dp"
-        android:layout_marginTop="340dp"
-        android:layout_marginRight="80dp"
-        android:src="@drawable/img_50"
-        android:text="Buka"
-        android:textSize="14sp" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="342dp"
-        android:text="Apotek Agatha Farma"
-        android:textStyle="bold"
-        android:textColor="#1B708E"
-        android:textSize="13sp"/>
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="365dp"
-        android:text="Tanjung Permai blok bn 12"
-        android:textStyle="normal"
-        android:textColor="#1B708E"
-        android:textSize="13sp"/>
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="411dp"
-        android:layout_height="90dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="420dp"
-        android:layout_marginRight="40dp"
-        android:src="@drawable/img_24" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="442dp"
-        android:text="Apotek Kimia Farma 455"
-        android:textStyle="bold"
-        android:textColor="#1B708E"
-        android:textSize="13sp"/>
-
-    <ImageView
-        android:id="@+id/button2"
-        android:layout_width="85dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="270dp"
-        android:layout_marginTop="440dp"
-        android:layout_marginRight="80dp"
-        android:src="@drawable/img_50"
-        android:text="Buka"
-        android:textSize="14sp" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="465dp"
-        android:text="Jl. Permaisuri, RT.001/RW.007"
-        android:textStyle="normal"
-        android:textColor="#1B708E"
-        android:textSize="13sp"/>
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="411dp"
-        android:layout_height="90dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="520dp"
-        android:layout_marginRight="40dp"
-        android:src="@drawable/img_24" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="542dp"
-        android:text="Apotek Sehat Prima"
-        android:textStyle="bold"
-        android:textColor="#1B708E"
-        android:textSize="13sp"/>
-
-    <ImageView
-        android:id="@+id/button3"
-        android:layout_width="85dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="270dp"
-        android:layout_marginTop="540dp"
-        android:layout_marginRight="80dp"
-        android:src="@drawable/img_50"
-        android:text="Buka"
-        android:textSize="14sp" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="565dp"
-        android:text="Jl. Marto Sari No. 66 Tj. Uban"
-        android:textStyle="normal"
-        android:textColor="#1B708E"
-        android:textSize="13sp"/>
-
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="30dp"
-        android:src="@drawable/img_35"
-        android:layout_marginTop="630dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginRight="50dp">
-    </ImageView>
-
-    <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/tv_apotek_terdekat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Lihat semua Apotek terdekat"
-        android:layout_marginTop="637dp"
-        android:layout_marginLeft="115dp"
-        android:layout_marginRight="50dp"
-        android:textSize="11sp"
-        android:textStyle="bold"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/apotek_terdekat"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lihat_lainnya"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_card_cari_apotek_terdekat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="24dp"
+        tools:listitem="@layout/item_card_cari_apotek_terdekat"
+        app:layout_constraintTop_toBottomOf="@+id/tv_apotek_terdekat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/iv_btn_lihat_apotek"/>
+
+    <ImageView
+        android:id="@+id/iv_btn_lihat_apotek"
+        android:layout_width="250dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_35"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_card_cari_apotek_terdekat"/>
+
+    <TextView
+        android:id="@+id/tv_lihat_semua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lihat_semua_apotek_terdekat"
+        android:textSize="12sp"
+        android:lineHeight="20dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        app:layout_constraintStart_toStartOf="@+id/iv_btn_lihat_apotek"
+        app:layout_constraintTop_toTopOf="@+id/iv_btn_lihat_apotek"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_btn_lihat_apotek"/>
 
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
