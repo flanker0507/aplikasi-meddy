@@ -1,72 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".KebijakanPrivasiFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kebijakan Privasi"
+            android:textSize="30sp"
+            android:textColor="#1B708E"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="85dp"/>
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kebijakan Privasi"
-        android:textSize="30sp"
-        android:textColor="#1B708E"
-        android:textStyle="bold"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="85dp"/>
+        <ImageView
+            android:id="@+id/imageView55"
+            android:layout_width="342.5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/img_92" />
 
-    <ImageView
-        android:id="@+id/imageView55"
-        android:layout_width="342.5dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/img_92" />
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="160dp"
+            android:text="Kami hanya akan mengumpulkan data yang relevan dan diperlukan untuk memberikan layanan kesehatan yang sesuai. Data pribadi yang mungkin kami kumpulkan termasuk informasi pribadi seperti nama, alamat, tanggal lahir, dan informasi medis yang relevan."
+            android:textSize="13sp"
+            android:textColor="#000000"/>
 
-    <TextView
-        android:id="@+id/textView37"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="160dp"
-        android:text="Kami hanya akan mengumpulkan data yang relevan dan diperlukan untuk memberikan layanan kesehatan yang sesuai. Data pribadi yang mungkin kami kumpulkan termasuk informasi pribadi seperti nama, alamat, tanggal lahir, dan informasi medis yang relevan."
-        android:textSize="13sp"
-        android:textColor="#000000"/>
+        <ImageView
+            android:id="@+id/imageView56"
+            android:layout_width="342.5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="240dp"
+            android:src="@drawable/img_93" />
 
-    <ImageView
-        android:id="@+id/imageView56"
-        android:layout_width="342.5dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="240dp"
-        android:src="@drawable/img_93" />
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="300dp"
+            android:text="Data yang kami kumpulkan akan digunakan secara eksklusif untuk memberikan layanan kesehatan yang diminta oleh pengguna. Kami tidak akan menggunakan atau mengungkapkan data pengguna tanpa persetujuan mereka, kecuali jika diwajibkan oleh hukum."
+            android:textSize="13sp"
+            android:textColor="#000000"/>
 
-    <TextView
-        android:id="@+id/textView38"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="300dp"
-        android:text="Data yang kami kumpulkan akan digunakan secara eksklusif untuk memberikan layanan kesehatan yang diminta oleh pengguna. Kami tidak akan menggunakan atau mengungkapkan data pengguna tanpa persetujuan mereka, kecuali jika diwajibkan oleh hukum."
-        android:textSize="13sp"
-        android:textColor="#000000"/>
+        <ImageView
+            android:id="@+id/imageView57"
+            android:layout_width="342.5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="395dp"
+            android:src="@drawable/img_94" />
 
-    <ImageView
-        android:id="@+id/imageView57"
-        android:layout_width="342.5dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="395dp"
-        android:src="@drawable/img_94" />
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="455dp"
+            android:text="Kami akan mengambil langkah-langkah yang wajar untuk melindungi data pribadi pengguna dari akses, penggunaan, atau pengungkapan yang tidak sah. Kami akan menggunakan metode keamanan teknis dan organisasi yang sesuai untuk melindungi data."
+            android:textSize="13sp"
+            android:textColor="#000000"/>
 
-    <TextView
-        android:id="@+id/textView39"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="455dp"
-        android:text="Kami akan mengambil langkah-langkah yang wajar untuk melindungi data pribadi pengguna dari akses, penggunaan, atau pengungkapan yang tidak sah. Kami akan menggunakan metode keamanan teknis dan organisasi yang sesuai untuk melindungi data."
-        android:textSize="13sp"
-        android:textColor="#000000"/>
-</FrameLayout>
+        <ImageView
+            android:id="@+id/imageView58"
+            android:layout_width="342.5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="535dp"
+            android:src="@drawable/img_142" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="594dp"
+            android:text="Kami akan menyimpan data pribadi pengguna hanya selama diperlukan untuk tujuan yang ditentukan dalam kebijakan privasi ini, kecuali jika diwajibkan atau diizinkan oleh hukum untuk periode yang lebih lama."
+            android:textSize="13sp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imageView59"
+            android:layout_width="342.5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="655dp"
+            android:src="@drawable/img_143" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="714dp"
+            android:text="Dalam beberapa kasus, kami mungkin menggunakan penyedia layanan pihak ketiga untuk membantu kami dalam menyediakan layanan kesehatan. Kami hanya akan bekerja dengan penyedia layanan yang menjalankan praktik privasi yang setara dengan kebijakan kami."
+            android:textSize="13sp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imageView60"
+            android:layout_width="342.5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="810dp"
+            android:src="@drawable/img_144" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="870dp"
+            android:text="Kami dapat mengubah kebijakan privasi ini dari waktu ke waktu. Setiap perubahan akan diberitahukan kepada pengguna melalui pembaruan aplikasi atau pemberitahuan yang sesuai. Pengguna diharapkan untuk mengkaji kebijakan privasi ini secara berkala."
+            android:textSize="13sp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imageView61"
+            android:layout_width="342.5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="950dp"
+            android:src="@drawable/img_145" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="1010dp"
+            android:text="Pengguna memiliki hak untuk mengakses,memperbaiki, menghapus, atau membatasi penggunaan data pribadi mereka. Kami akan bekerja sama dengan pengguna untuk memenuhi permintaan ini sesuai dengan hukum yang berlaku."
+            android:textSize="13sp"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+</ScrollView>
