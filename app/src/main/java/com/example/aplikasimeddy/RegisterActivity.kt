@@ -13,7 +13,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun moveToMainLoginActivity(){
-        val btnDaftar = findViewById<Button>(R.id.btn_daftar)
+        val btnDaftar = findViewById<Button>(R.id.btn_register)
         btnDaftar.setOnClickListener{
             val move = Intent(this, LoginActivity::class.java)
             startActivity(move)

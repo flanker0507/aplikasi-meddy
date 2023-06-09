@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,162 +7,119 @@
     tools:context=".RegisterActivity">
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/tv_register_ayo_daftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ayo Daftar!"
+        android:text="@string/register_ayo_daftar"
         android:textSize="30sp"
-        android:textColor="#1B708E"
-        android:textStyle="bold"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="40dp"/>
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="125dp"
-        android:src="@drawable/img_28" />
+        android:textColor="@color/primary"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
-        android:id="@+id/name"
-        android:layout_width="290dp"
+        android:id="@+id/et_register_first_name"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:text="Nama depan"
-        android:textSize="20sp"
-        android:textColor="#979797"
-        android:textStyle="bold"
-        android:layout_marginTop="125dp"
-        android:layout_marginLeft="55dp"
-        android:background="@android:color/transparent"/>
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="195dp"
-        android:src="@drawable/img_28" />
+        android:hint="Nama depan"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_register_ayo_daftar"/>
 
     <EditText
-        android:id="@+id/email"
-        android:layout_width="290dp"
+        android:id="@+id/et_register_email"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:text="Email Aktif"
-        android:textSize="20sp"
-        android:textColor="#979797"
-        android:textStyle="bold"
-        android:layout_marginTop="195dp"
-        android:layout_marginLeft="55dp"
-        android:background="@android:color/transparent"/>
+        android:hint="Email Aktif"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_register_first_name"/>
 
-    <ImageView
-        android:id="@+id/imageView12"
+    <EditText
+        android:id="@+id/et_register_nomor_handphone"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="265dp"
-        android:src="@drawable/img_29" />
+        android:layout_height="48dp"
+        android:hint="Nomor Handphone"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_register_email"/>
 
     <EditText
-        android:id="@+id/nomor"
-        android:layout_width="200dp"
-        android:layout_height="49dp"
-        android:text="Nomor Handphone"
-        android:textSize="20sp"
-        android:textColor="#979797"
-        android:textStyle="bold"
-        android:layout_marginTop="265dp"
-        android:layout_marginLeft="115dp"
-        android:background="@android:color/transparent"/>
-
-    <TextView
-        android:id="@+id/nomor1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+62"
-        android:textSize="20sp"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:layout_marginTop="275dp"
-        android:layout_marginLeft="50dp"/>
-
-    <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/et_register_password"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="335dp"
-        android:src="@drawable/img_28" />
+        android:layout_height="48dp"
+        android:hint="Kata Sandi"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_register_nomor_handphone"/>
 
     <EditText
-        android:id="@+id/ktsandi"
-        android:layout_width="290dp"
-        android:layout_height="49dp"
-        android:text="Kata Sandi"
-        android:textSize="20sp"
-        android:textColor="#979797"
-        android:textStyle="bold"
-        android:layout_marginTop="335dp"
-        android:layout_marginLeft="55dp"
-        android:background="@android:color/transparent"/>
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="405dp"
-        android:src="@drawable/img_30" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="325dp"
-        android:layout_marginTop="412.5dp"
-        android:src="@drawable/img_36" />
-
-    <EditText
-        android:id="@+id/select"
-        android:layout_width="wrap_content"
-        android:layout_height="49dp"
-        android:text="Pilih Daerah Rungkut Asri"
-        android:textSize="20sp"
-        android:textColor="#979797"
-        android:textStyle="bold"
-        android:layout_marginTop="408dp"
-        android:layout_marginLeft="55dp"
-        android:background="@android:color/transparent"/>
+        android:id="@+id/et_register_select_region"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Pilih Daerah Rungkut Asri"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_register_password"/>
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cb_register"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Saya setuju dengan"
-        android:layout_marginTop="450dp"
-        android:layout_marginLeft="50dp"
-        android:textColor="#979797"
-        android:textSize="15sp" />
+        android:layout_height="24dp"
+        android:text="@string/cb_register_text"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:textSize="12sp"
+        android:textColor="#50000000"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_register_select_region"/>
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/tv_register_syarat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Syarat dan ketentuan"
-        android:textSize="15sp"
-        android:textColor="#1B708E"
-        android:textStyle="bold"
-        android:layout_marginTop="464dp"
-        android:layout_marginLeft="215dp"/>
+        android:text="@string/register_syarat"
+        android:textSize="12sp"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/montserrat_semi_bold"
+        app:layout_constraintStart_toEndOf="@+id/cb_register"
+        app:layout_constraintTop_toTopOf="@+id/cb_register"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_register"/>
 
     <Button
-        android:id="@+id/btn_daftar"
-        android:layout_width="345dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="505dp"
-        android:layout_marginRight="60dp"
-        android:text="daftar"
-        android:textSize="23sp"
-        android:background="@drawable/rounded_cornor" />
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/btn_register"
+        android:textSize="24sp"
+        android:background="@drawable/btn_rounded_corner_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_register"/>
 
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

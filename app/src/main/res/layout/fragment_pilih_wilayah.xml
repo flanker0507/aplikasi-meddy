@@ -12,7 +12,7 @@
         android:layout_height="150dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="65dp"
-        android:src="@drawable/img_30" />
+        android:src="@drawable/bg_et_register_3" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -20,7 +20,7 @@
         android:layout_height="35dp"
         android:layout_marginLeft="325dp"
         android:layout_marginTop="72.5dp"
-        android:src="@drawable/img_36" />
+        android:src="@drawable/img_dropdown" />
 
     <EditText
         android:id="@+id/select"
@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="125dp"
-        android:src="@drawable/img_28" />
+        android:src="@drawable/bg_et_register" />
 
     <EditText
         android:id="@+id/name"
@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="185dp"
-        android:src="@drawable/img_28" />
+        android:src="@drawable/bg_et_register" />
 
     <EditText
         android:id="@+id/email"
@@ -77,7 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="245dp"
-        android:src="@drawable/img_28" />
+        android:src="@drawable/bg_et_register" />
 
     <EditText
         android:id="@+id/ktsandi"

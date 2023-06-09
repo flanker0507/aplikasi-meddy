@@ -19,7 +19,7 @@
         android:layout_height="47dp"
         android:layout_marginLeft="35dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/img_7" />
+        android:src="@drawable/img_logo_meddy" />
     <TextView
         android:id="@+id/textView3"
         android:layout_width="40dp"
@@ -48,7 +48,7 @@
         android:layout_height="15dp"
         android:layout_marginLeft="105dp"
         android:layout_marginTop="45dp"
-        android:src="@drawable/img_20" />
+        android:src="@drawable/img_icon_lokasi" />
 
     <TextView
         android:id="@+id/textView4"
@@ -133,8 +133,7 @@
         android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/img_34" />
+        android:layout_marginTop="60dp" />
 
     <EditText
         android:id="@+id/textView21"
