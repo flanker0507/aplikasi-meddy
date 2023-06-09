@@ -15,21 +15,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//        loadFragmentLogin(LoginFragment())
         moveToMainActivity()
         moveToRegisterActivity()
     }
-//    private fun loadFragmentLogin(fragment: Fragment){
-//
-//        val fragmentManager = supportFragmentManager
-//        val fragmentTransaction = fragmentManager.beginTransaction()
-//        fragmentTransaction.replace(R.id.frame_layout_login, fragment)
-//        fragmentTransaction.disallowAddToBackStack()
-//        fragmentTransaction.commit()
-//    }
-
     private fun moveToMainActivity(){
-        val btnLogin = findViewById<Button>(R.id.button_login)
+        val btnLogin = findViewById<Button>(R.id.btn_login)
         btnLogin.setOnClickListener{
             val move = Intent(this, MainActivity::class.java)
             startActivity(move)
@@ -37,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun moveToRegisterActivity(){
-        val txtListener = findViewById<TextView>(R.id.tv_buat_sekarang)
+        val txtListener = findViewById<TextView>(R.id.tv_login_buatSkrg)
         txtListener.setOnClickListener{
             val move = Intent(this, RegisterActivity::class.java)
             startActivity(move)

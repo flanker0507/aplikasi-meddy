@@ -36,7 +36,7 @@
         android:layout_marginRight="30dp"
         android:text="Hari iNI"
         android:textSize="23sp"
-        android:background="@drawable/rounded_cornor"/>
+        android:background="@drawable/btn_rounded_corner_primary"/>
 
     <ImageView
         android:id="@+id/imageViewAm"

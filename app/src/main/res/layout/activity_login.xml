@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,85 +7,89 @@
     tools:context=".LoginActivity">
 
     <ImageView
-        android:layout_width="179dp"
-        android:layout_height="159dp"
-        android:layout_marginLeft="115dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="100dp"
-        android:src="@drawable/img_6" />
-
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="548dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="450dp"
-        android:layout_marginRight="30dp"
-        android:text="Masuk"
-        android:textSize="23sp"
-        android:background="@drawable/rounded_cornor"/>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="135dp"
-        android:layout_height="25dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="510dp"
-        android:layout_marginRight="50dp"
-        android:text="Belum punya akun?"
-        android:textSize="15sp"/>
-
-    <TextView
-        android:id="@+id/tv_buat_sekarang"
-        android:layout_width="135dp"
-        android:layout_height="25dp"
-        android:layout_marginLeft="185dp"
-        android:layout_marginTop="510dp"
-        android:layout_marginRight="50dp"
-        android:text="Buat Sekarang"
-        android:textSize="15sp"
-        android:textStyle="bold"/>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/img_32"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginRight="30dp">
-    </ImageView>
+        android:id="@+id/iv_login_logo"
+        android:layout_width="212dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/img_login_logo"
+        android:contentDescription="@string/login_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <EditText
-        android:id="@+id/editTextTextNamelAddress"
-        android:layout_width="345dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="285dp"
-        android:layout_marginRight="50dp"
+        android:id="@+id/et_login_username"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="20dp"
         android:hint="Nama Pengguna"
+        android:inputType="text"
         android:ems="10"
         android:textSize="20sp"
-        android:background="@android:color/transparent"/>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/img_33"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="330dp"
-        android:layout_marginRight="30dp">
-    </ImageView>
-
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_login_logo"/>
 
     <EditText
-        android:id="@+id/editTextTextPasswordlAddress"
-        android:layout_width="345dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="355dp"
-        android:layout_marginRight="30dp"
+        android:id="@+id/et_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="20dp"
         android:hint="Kata Sandi"
+        android:inputType="textPassword"
         android:ems="10"
-        android:background="@android:color/transparent"/>
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_username"/>
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Masuk"
+        android:textSize="24sp"
+        android:background="@drawable/btn_rounded_corner_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_password"/>
+
+    <TextView
+        android:id="@+id/tv_login_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/login_question"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"/>
+
+    <TextView
+        android:id="@+id/tv_login_buatSkrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/login_buat_sekarang"
+        android:textSize="16sp"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/montserrat_semi_bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_login_question"
+        app:layout_constraintEnd_toEndOf="@+id/tv_login_question"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_question"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -160,4 +160,11 @@
     <string name="lihat_lainnya">Lihat lainnya</string>
     <string name="lihat_semua_apotek_terdekat">Lihat semua Apotek terdekat</string>
     <string name="icon_lokasi">icon_lokasi</string>
+    <string name="login_logo">Login Logo</string>
+    <string name="login_question">Belum punya akun?</string>
+    <string name="login_buat_sekarang">Buat Sekarang</string>
+    <string name="register_ayo_daftar">Ayo Daftar!</string>
+    <string name="cb_register_text">Saya setuju dengan</string>
+    <string name="register_syarat">Syarat dan ketentuan</string>
+    <string name="btn_register">Daftar</string>
 </resources>
