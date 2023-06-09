@@ -84,37 +84,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_register_password"/>
 
-    <LinearLayout
-        android:id="@+id/cl_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:orientation="horizontal"
+    <CheckBox
+        android:id="@+id/cb_register"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="@string/cb_register_text"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:textSize="12sp"
+        android:textColor="#50000000"
+        android:fontFamily="@font/montserrat_medium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_register_select_region"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/et_register_select_region"/>
 
-        <CheckBox
-            android:id="@+id/cb_register"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:text="@string/cb_register_text"
-            android:layout_marginTop="8dp"
-            android:textSize="12sp"
-            android:textColor="#50000000"
-            android:fontFamily="@font/montserrat_medium" />
-
-        <TextView
-            android:id="@+id/tv_register_syarat"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:text="@string/register_syarat"
-            android:textSize="12sp"
-            android:textColor="@color/primary"
-
-            android:fontFamily="@font/montserrat_semi_bold" />
-    </LinearLayout>
-
+    <TextView
+        android:id="@+id/tv_register_syarat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_syarat"
+        android:textSize="12sp"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/montserrat_semi_bold"
+        app:layout_constraintStart_toEndOf="@+id/cb_register"
+        app:layout_constraintTop_toTopOf="@+id/cb_register"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_register"/>
 
     <Button
         android:id="@+id/btn_register"
