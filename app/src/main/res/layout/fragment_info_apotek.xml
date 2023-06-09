@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoApotekFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageView110"
+            android:layout_width="match_parent"
+            android:layout_height="328dp"
+            android:layout_marginTop="-90dp"
+            android:src="@drawable/img_168" />
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_171" />
+
+        <ImageView
+            android:id="@+id/imageView82"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/img_117" />
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apotek Agatha Farma"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="200dp"/>
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jl. Tanjung Permai Blok bn. No. 12"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="225dp"/>
+
+        <ImageView
+            android:id="@+id/imageView111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="-5dp"/>
+
+        <ImageView
+            android:id="@+id/imageView112"
+            android:layout_width="89dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/img_169" />
+        <ImageView
+            android:id="@+id/imageView113"
+            android:layout_width="89dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/img_170" />
+
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="155dp"
+            android:layout_height="173dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="570dp"
+            android:src="@drawable/img_39" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="70dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="600dp"
+            android:src="@drawable/img_155" />
+
+        <TextView
+            android:layout_width="78dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="680dp"
+            android:text="Paracetamol 500 mg/10 kaplet"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="152dp"
+            android:layout_height="171dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="370dp"
+            android:src="@drawable/img_39" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="70dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="273dp"
+            android:layout_marginTop="400dp"
+            android:src="@drawable/img_174" />
+        <TextView
+            android:layout_width="78dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="480dp"
+            android:text="Sileadex Batuk Pilek 100 ml"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="155dp"
+            android:layout_height="173dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="370dp"
+            android:src="@drawable/img_39" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="70dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="400dp"
+            android:src="@drawable/img_153" />
+
+        <TextView
+            android:layout_width="78dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="480dp"
+            android:text="Paracetamol 500 mg/10 kaplet"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="152dp"
+            android:layout_height="171dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="570dp"
+            android:src="@drawable/img_39" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="70dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="273dp"
+            android:layout_marginTop="600dp"
+            android:src="@drawable/img_173" />
+        <TextView
+            android:layout_width="78dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="680dp"
+            android:text="Sileadex Batuk Pilek 100 ml"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>

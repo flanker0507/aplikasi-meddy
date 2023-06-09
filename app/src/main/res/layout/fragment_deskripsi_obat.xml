@@ -10,13 +10,14 @@
     <ImageView
         android:id="@+id/imageView36"
         android:layout_width="wrap_content"
-        android:layout_height="195dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="-60dp"
         android:src="@drawable/img_11" />
 
     <ImageView
         android:id="@+id/imageView37"
         android:layout_width="wrap_content"
-        android:layout_height="438dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="-2dp"
         android:layout_marginTop="280dp"
         android:src="@drawable/img_56" />
