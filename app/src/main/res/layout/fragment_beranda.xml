@@ -11,23 +11,22 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@color/soft_ice_blue"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <!--start profile picture-->
-        <de.hdodenhof.circleimageview.CircleImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/circle_iv_foto_profil"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/img_profile_picture"
             android:layout_marginStart="16dp"
+            android:src="@drawable/img_profile_picture"
             app:civ_border_color="@color/primary"
             app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
         <!--end profile picture-->
 
         <!--start text selamat datang-->
@@ -35,13 +34,13 @@
             android:id="@+id/tv_selamat_datang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/selamat_datang"
-            android:fontFamily="@font/montserrat_semi_bold"
-            android:textSize="14sp"
-            android:textColor="@color/primary"
-            android:lineHeight="20dp"
-            android:layout_marginTop="24dp"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:lineHeight="20dp"
+            android:text="@string/selamat_datang"
+            android:textColor="@color/primary"
+            android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@+id/circle_iv_foto_profil"
             app:layout_constraintTop_toTopOf="parent" />
         <!--end text selamat datang-->
@@ -51,12 +50,12 @@
             android:id="@+id/tv_nama_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nama"
-            android:fontFamily="@font/montserrat_bold"
-            android:textSize="20sp"
-            android:textColor="@color/primary"
-            android:lineHeight="28dp"
             android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:lineHeight="28dp"
+            android:text="@string/nama"
+            android:textColor="@color/primary"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/tv_selamat_datang"
             app:layout_constraintTop_toBottomOf="@+id/tv_selamat_datang" />
         <!--end user name-->
@@ -70,8 +69,8 @@
         android:layout_height="140dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="12dp"
-        app:cardCornerRadius="12dp"
         app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bg_frame_ice_blue">
@@ -86,10 +85,10 @@
                 android:id="@+id/iv_clock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/clock"
                 android:contentDescription="@string/cd_icon_clock"
+                android:src="@drawable/clock"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tv_cv_pengingat"
@@ -101,7 +100,7 @@
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@+id/iv_clock"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView19"
@@ -111,43 +110,43 @@
                 android:text="@string/waktu"
                 android:textColor="@color/white"
                 android:textSize="14sp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/iv_line"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/line"
                 android:layout_marginTop="12dp"
                 android:contentDescription="@string/cd_line"
-                app:layout_constraintTop_toBottomOf="@+id/iv_clock"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintTop_toBottomOf="@+id/iv_clock" />
 
             <ImageView
                 android:id="@+id/iv_cv_obat"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/amoxicillin"
-                android:contentDescription="@string/foto_obat"
                 android:layout_marginTop="16dp"
+                android:contentDescription="@string/foto_obat"
+                android:src="@drawable/amoxicillin"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/iv_line"/>
+                app:layout_constraintTop_toBottomOf="@+id/iv_line" />
 
             <TextView
                 android:id="@+id/tv_cv_nama_obat_beranda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
                 android:fontFamily="@font/montserrat_semi_bold"
+                android:lineHeight="20dp"
                 android:text="@string/nama_obat"
                 android:textColor="@color/white"
                 android:textSize="14sp"
-                android:lineHeight="20dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="8dp"
                 app:layout_constraintStart_toEndOf="@+id/iv_cv_obat"
-                app:layout_constraintTop_toBottomOf="@+id/iv_line"/>
+                app:layout_constraintTop_toBottomOf="@+id/iv_line" />
 
             <TextView
                 android:id="@+id/tv_cv_takaran"
@@ -155,12 +154,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/montserrat_semi_bold"
+                android:lineHeight="14dp"
                 android:text="@string/takaran_obat"
                 android:textColor="@color/white"
                 android:textSize="10sp"
-                android:lineHeight="14dp"
                 app:layout_constraintStart_toStartOf="@+id/tv_cv_nama_obat_beranda"
-                app:layout_constraintTop_toBottomOf="@+id/tv_cv_nama_obat_beranda"/>
+                app:layout_constraintTop_toBottomOf="@+id/tv_cv_nama_obat_beranda" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -168,14 +167,14 @@
         android:id="@+id/search_view_beranda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:queryHint="Cari nama obat, apotek"
-        android:iconifiedByDefault="false"
-        android:layout_marginTop="24dp"
         android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/bg_sv_beranda"
-        app:layout_constraintStart_toStartOf="parent"
+        android:iconifiedByDefault="false"
+        android:queryHint="Cari nama obat, apotek"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_pengingat"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_pengingat" />
 
 
     <!--start text apotek terdekat-->
@@ -183,29 +182,27 @@
         android:id="@+id/text_apotek_terdekat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tv_apotek_terdekat"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:textColor="#1B708E"
-        android:layout_marginTop="12dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/tv_apotek_terdekat"
+        android:textColor="#1B708E"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_view_beranda"/>
+        app:layout_constraintTop_toBottomOf="@+id/search_view_beranda" />
     <!--end text apotek terdekat-->
 
     <!--start view apotek terdekat-->
     <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_card_apotek_terdekat"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="32dp"
-            tools:listitem="@layout/item_list_apotek_terdekat"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_apotek_terdekat"
-            app:layout_constraintBottom_toBottomOf="parent"/>
-
+        android:id="@+id/rv_card_apotek_terdekat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_apotek_terdekat"
+        tools:listitem="@layout/item_list_apotek_terdekat" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

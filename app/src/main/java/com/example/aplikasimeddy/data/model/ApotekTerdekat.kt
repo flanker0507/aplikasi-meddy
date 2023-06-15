@@ -1,4 +1,4 @@
-package com.example.aplikasimeddy
+package com.example.aplikasimeddy.data.model
 
 data class ApotekTerdekat (
     val nama_apotek: String,

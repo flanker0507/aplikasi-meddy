@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.aplikasimeddy.ui.adapter.ApotekTerdekatAdapter
+import com.example.aplikasimeddy.data.model.ApotekTerdekat
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -72,7 +74,14 @@ class BerandaFragment : Fragment() {
         recyclerView = view.findViewById(R.id.rv_card_apotek_terdekat)
         recyclerView.layoutManager = layoutManager
         recyclerView.setHasFixedSize(true)
-        adapter = ApotekTerdekatAdapter(apotekArrayList)
+        adapter = ApotekTerdekatAdapter(apotekArrayList){
+            val fragmentManager = requireActivity().supportFragmentManager
+            val destination = InfoApotekFragment()
+            fragmentManager.beginTransaction().replace(
+                    R.id.frame_layout, destination)
+                .addToBackStack(null)
+                .commit()
+        }
         recyclerView.adapter = adapter
 
     }

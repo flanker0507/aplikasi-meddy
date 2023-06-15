@@ -59,6 +59,26 @@
         <item>@drawable/apotek_kimia_farma_bintan</item>
         <item>@drawable/apotek_kimia_farma_bintan</item>
     </integer-array>
+
+    <integer-array name="image_obat">
+        <item>@drawable/img_amox_hexpharm</item>
+        <item>@drawable/img_amox_trihydrate</item>
+        <item>@drawable/img_amox</item>
+        <item>@drawable/img_amox_yusimox</item>
+        <item>@drawable/img_amox_novapharin</item>
+        <item>@drawable/img_amox_amemox</item>
+    </integer-array>
+
+    <string-array name="nama_obat">
+        <item>Amoxicillin Hexpharm 500Mg/ 10 kaplet</item>
+        <item>Amoxicillin Trihydrate Ogb Dexa Medica 500 Mg/ 10 kaplet</item>
+        <item>Amoxicillin 250 Mg/ 10 kaplet</item>
+        <item>YUSIMOX Sirup 125 ml Amoxicillin</item>
+        <item>Amoxicillin Novapharin sirup kering 125 ml</item>
+        <item>AMEMOX Sirup 60 ml</item>
+    </string-array>
+    
+    
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -167,4 +187,25 @@
     <string name="cb_register_text">Saya setuju dengan</string>
     <string name="register_syarat">Syarat dan ketentuan</string>
     <string name="btn_register">Daftar</string>
+    <string name="memilih_apoteker">Bagaimana Cara Memilih Apoteker?</string>
+    <string name="pilih_konseling">Pilih konseling</string>
+    <string name="hub_apoteker">Hubungi apoteker melalui kontak yang tersedia</string>
+    <string name="desc_onboarding2">Tetap jaga konsistensi konsumsi obatmu sesuai dengan anjuran.</string>
+    <string name="img_onboarding2">Image Onboarding 2</string>
+    <string name="img_onboarding_3">Image Onboarding 3</string>
+    <string name="img_next_3">Next 3</string>
+    <string name="img_next_2">Next 2</string>
+    <string name="desc_onboarding3">Cari informasi Apotek yang terdekat denganmu.</string>
+    <string name="img_onboarding4">Image Onboarding 4</string>
+    <string name="desc_onboarding4">Jangan khawatir, Kami akan menyimpan data konsultasi obat Anda.</string>
+    <string name="img_next_4">Next 4</string>
+    <string name="tambah_jadwal">Tambah Jadwal</string>
+    <string name="pagi">Pagi</string>
+    <string name="siang">Siang</string>
+    <string name="sore">Sore</string>
+    <string name="dosis">Dosis</string>
+    <string name="jml_obat">Jumlah obat tersisa (jumlah tablet)</string>
+    <string name="anjuran">Anjuran obat per konsumsi</string>
+    <string name="obat">Obat</string>
+    <string name="apotek">Apotek</string>
 </resources>

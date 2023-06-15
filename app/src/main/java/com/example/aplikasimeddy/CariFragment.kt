@@ -5,8 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.aplikasimeddy.ui.adapter.CariApotekTerdekatAdapter
+import com.example.aplikasimeddy.data.model.ApotekTerdekatCari
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -72,9 +75,23 @@ class CariFragment : Fragment() {
         recyclerView = view.findViewById(R.id.rv_card_cari_apotek_terdekat)
         recyclerView.layoutManager = layoutManager
         recyclerView.setHasFixedSize(true)
-        adapter = CariApotekTerdekatAdapter(list)
+        adapter = CariApotekTerdekatAdapter(list){
+            val fragmentManager = requireActivity().supportFragmentManager
+            val destination = InfoApotekFragment()
+            fragmentManager.beginTransaction().replace(R.id.frame_layout, destination)
+                .addToBackStack(null)
+                .commit()
+        }
         recyclerView.adapter = adapter
 
+        //move to lihat semua apotek
+        val btnLihatApotek: ImageView = view.findViewById(R.id.iv_btn_lihat_apotek)
+        btnLihatApotek.setOnClickListener{
+            val fragmentManager = requireActivity().supportFragmentManager
+            val destination = HasilCariContainerFragment()
+            fragmentManager.beginTransaction().replace(R.id.frame_layout, destination)
+                .commit()
+        }
     }
     private fun getData(): ArrayList<ApotekTerdekatCari>{
         val namaApotek = resources.getStringArray(R.array.nama_apotek)

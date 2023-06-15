@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,66 +7,64 @@
     tools:context=".Onboarding2Fragment">
 
     <FrameLayout
+        android:id="@+id/bg_frame_intro2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="368dp"
+        android:background="@drawable/img_12"
+        android:contentDescription="@string/img_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="342dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/img_12" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="253dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="40dp"
-            android:src="@drawable/img_onboard_1" />
+            android:id="@+id/iv_onboard1"
+            android:layout_width="308dp"
+            android:layout_height="234dp"
+            android:layout_marginHorizontal="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_onboard_2"
+            android:contentDescription="@string/img_onboarding2"/>
     </FrameLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_desc_onboarding2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lewati"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="330dp"
-        android:textColor="#FFFFFF"/>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginRight="30dp"
-        android:textColor="#1B708E"
+        android:layout_marginTop="48dp"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/primary"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:text="Pahami ragam obat dan cara pakainya sesuai dengan dosis demi kesehatan Anda."/>
+        android:fontFamily="@font/montserrat_bold"
+        android:textAlignment="center"
+        android:text="@string/desc_onboarding2"
+        app:layout_constraintTop_toBottomOf="@+id/bg_frame_intro2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <ImageView
-        android:id="@+id/imageButton1"
+        android:id="@+id/iv_intro_slider2"
         android:layout_width="73dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="170dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginRight="150dp"
-        app:srcCompat="@drawable/img_13" />
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/dot"
+        app:srcCompat="@drawable/img_14"
+        app:layout_constraintTop_toBottomOf="@+id/bg_frame_intro2"
+        app:layout_constraintBottom_toTopOf="@+id/iv_btn_next2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
-        android:id="@+id/imageButton"
-        android:layout_width="85dp"
-        android:layout_height="63dp"
-        android:layout_marginLeft="165dp"
-        android:layout_marginTop="570dp"
-        app:srcCompat="@drawable/img_1" />
+        android:id="@+id/iv_btn_next2"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="120dp"
+        android:contentDescription="@string/img_next_2"
+        app:srcCompat="@drawable/img_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

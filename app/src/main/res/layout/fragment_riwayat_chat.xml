@@ -52,7 +52,7 @@
         android:layout_marginLeft="355dp"/>
 
     <ImageView
-        android:id="@+id/imageView102"
+        android:id="@+id/iv_btn_new_chat"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:src="@drawable/img_77"

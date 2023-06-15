@@ -121,7 +121,7 @@
             android:layout_height="100dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="220dp"
-            android:src="@drawable/img_40" />
+            android:src="@drawable/img_amox_hexpharm" />
 
         <TextView
             android:layout_width="108dp"
@@ -146,7 +146,7 @@
             android:layout_height="103dp"
             android:layout_marginLeft="252.5dp"
             android:layout_marginTop="213dp"
-            android:src="@drawable/img_41" />
+            android:src="@drawable/img_amox_trihydrate" />
 
         <TextView
             android:layout_width="108dp"
@@ -172,7 +172,7 @@
             android:layout_height="100dp"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="420dp"
-            android:src="@drawable/img_42" />
+            android:src="@drawable/img_amox" />
 
         <TextView
             android:layout_width="108dp"
@@ -197,7 +197,7 @@
             android:layout_height="103dp"
             android:layout_marginLeft="252.5dp"
             android:layout_marginTop="413dp"
-            android:src="@drawable/img_43" />
+            android:src="@drawable/img_amox_yusimox" />
 
         <TextView
             android:layout_width="108dp"
@@ -223,7 +223,7 @@
             android:layout_height="100dp"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="620dp"
-            android:src="@drawable/img_126" />
+            android:src="@drawable/img_amox_novapharin" />
 
         <TextView
             android:layout_width="108dp"
@@ -248,7 +248,7 @@
             android:layout_height="103dp"
             android:layout_marginLeft="252.5dp"
             android:layout_marginTop="613dp"
-            android:src="@drawable/img_127" />
+            android:src="@drawable/img_amox_amemox" />
 
         <TextView
             android:layout_width="108dp"

@@ -1,11 +1,13 @@
-package com.example.aplikasimeddy
+package com.example.aplikasimeddy.ui.screen.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import androidx.fragment.app.Fragment
+import com.example.aplikasimeddy.MainActivity
+import com.example.aplikasimeddy.R
+import com.example.aplikasimeddy.ui.screen.register.RegisterActivity
 import com.example.aplikasimeddy.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {

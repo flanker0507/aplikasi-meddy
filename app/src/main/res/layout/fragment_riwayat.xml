@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KonsultasiFragment">
+    tools:context=".RiwayatFragment">
 
     <ImageView
         android:id="@+id/imageView81"
@@ -50,7 +50,7 @@
         android:id="@+id/imageView97"
         android:layout_width="17dp"
         android:layout_height="23dp"
-        android:src="@drawable/img_123"
+        android:src="@drawable/img_outline_location"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="198dp"/>
 
@@ -69,7 +69,7 @@
         android:id="@+id/imageView98"
         android:layout_width="17dp"
         android:layout_height="23dp"
-        android:src="@drawable/img_124"
+        android:src="@drawable/img_outline_cursor_mouse"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="228dp"/>
 
@@ -88,7 +88,7 @@
         android:id="@+id/imageView99"
         android:layout_width="17dp"
         android:layout_height="23dp"
-        android:src="@drawable/img_125"
+        android:src="@drawable/img_outline_chat"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="258dp"/>
 

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/bg_card_input_waktu"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/iv_apotek_terdekat_hasil_cari"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:src="@drawable/apotek_agatha_farma"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nama_apotek_hasil_cari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Nama Apotek"
+            android:textColor="@color/primary"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_apotek_terdekat_hasil_cari"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_alamat_apotek_hasil_cari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Alamat Apotek"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_apotek_hasil_cari"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama_apotek_hasil_cari" />
+
+        <ImageView
+            android:id="@+id/iv_btn_buka_hasil_cari"
+            android:layout_width="85dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/img_btn_buka"
+            app:layout_constraintStart_toEndOf="@+id/iv_apotek_terdekat_hasil_cari"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alamat_apotek_hasil_cari" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

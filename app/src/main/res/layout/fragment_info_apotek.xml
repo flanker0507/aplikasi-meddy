@@ -24,12 +24,12 @@
             android:src="@drawable/img_171" />
 
         <ImageView
-            android:id="@+id/imageView82"
+            android:id="@+id/iv_btn_back"
             android:layout_width="40dp"
             android:layout_height="35dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="18dp"
-            android:src="@drawable/img_117" />
+            android:src="@drawable/btn_back" />
 
         <TextView
             android:id="@+id/textView62"
@@ -55,7 +55,6 @@
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_172"
             android:layout_marginTop="320dp"/>
 
         <ImageView
@@ -445,7 +444,6 @@
             android:id="@+id/imageView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_30"
             android:layout_marginTop="1450dp"/>
     </RelativeLayout>
 </ScrollView>

@@ -56,4 +56,15 @@ class CariApotekFragment : Fragment() {
                 }
             }
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+//        val fragmentManager = requireActivity().supportFragmentManager
+//        val destination = RincianFragment()
+//        fragmentManager.beginTransaction().replace(R.id.frame_layout,
+//        destination)
+//            .addToBackStack(null)
+//            .commit()
+    }
 }

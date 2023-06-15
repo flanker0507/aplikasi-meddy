@@ -16,7 +16,7 @@
         android:src="@drawable/img_98" />
 
     <ImageView
-        android:id="@+id/imageView63"
+        android:id="@+id/iv_btn_atur_sekarang"
         android:layout_width="202dp"
         android:layout_height="71dp"
         android:layout_marginLeft="100dp"

@@ -1,9 +1,11 @@
-package com.example.aplikasimeddy
+package com.example.aplikasimeddy.ui.screen.register
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.aplikasimeddy.R
+import com.example.aplikasimeddy.ui.screen.login.LoginActivity
 
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -18,12 +18,12 @@
         android:layout_marginTop="20dp"/>
 
     <ImageView
-        android:id="@+id/imageView82"
+        android:id="@+id/iv_btn_back_rincian"
         android:layout_width="40dp"
         android:layout_height="35dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="18dp"
-        android:src="@drawable/img_117" />
+        android:src="@drawable/btn_back" />
 
 
     <ImageView

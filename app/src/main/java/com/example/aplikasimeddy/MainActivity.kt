@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.aplikasimeddy.databinding.ActivityMainBinding
+import com.example.aplikasimeddy.JadwalFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +22,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.beranda -> replaceFragment(BerandaFragment())
                 R.id.cari -> replaceFragment(CariFragment())
                 R.id.jadwal -> replaceFragment(JadwalFragment())
-                R.id.riwayat -> replaceFragment(KonsultasiFragment())
+                R.id.riwayat -> replaceFragment(RiwayatChatFragment())
             }
             true
         }

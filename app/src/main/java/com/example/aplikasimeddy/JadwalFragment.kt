@@ -1,10 +1,11 @@
 package com.example.aplikasimeddy
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import androidx.fragment.app.Fragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -55,5 +56,20 @@ class JadwalFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val moveButton: ImageView = view.findViewById(R.id.iv_btn_atur_sekarang)
+        moveButton.setOnClickListener {
+            val fragmentManager = requireActivity().supportFragmentManager
+            val destination = InputJadwalFragment()
+
+            fragmentManager.beginTransaction()
+                .replace(R.id.frame_layout, destination)
+                .addToBackStack(null)
+                .commit()
+        }
     }
 }

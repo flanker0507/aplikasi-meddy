@@ -1,4 +1,4 @@
-package com.example.aplikasimeddy
+package com.example.aplikasimeddy.ui.screen.splash
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import com.example.aplikasimeddy.OnboardingActivity
+import com.example.aplikasimeddy.R
 
 @SuppressLint("CustomSplashScreen")
 class SplashscreenActivity : AppCompatActivity() {

@@ -1,10 +1,12 @@
 package com.example.aplikasimeddy
 
+import android.media.Image
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -55,5 +57,17 @@ class Onboarding3Fragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val nextBtn: ImageView = view.findViewById(R.id.iv_btn_next3)
+        nextBtn.setOnClickListener{
+            val fragmentManager = requireActivity().supportFragmentManager
+            val destination = Onboarding4Fragment()
+            fragmentManager.beginTransaction().replace(R.id.onboarding_container, destination)
+                .commit()
+        }
     }
 }

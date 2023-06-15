@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SemuaHasilCariFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_obat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/obat"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_rv_obat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_obat"
+            android:gravity="center">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_hasil_cari_obat_2"
+                android:layout_width="wrap_content"
+                android:layout_height="420dp"
+                android:paddingHorizontal="16dp"
+                tools:listitem="@layout/item_hasil_cari_obat" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bg_lihat_lainnya"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_below="@+id/ll_rv_obat"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_lihat_lainnya"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_lihat_lainnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="@string/lihat_lainnya"
+                android:textColor="@color/primary" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_lihat_lainnya"
+                android:src="@drawable/img_arrow_right_primary" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_apotek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_bg_lihat_lainnya"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/apotek"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_hasil_cari_apotek_2"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@+id/tv_apotek"
+            android:layout_marginHorizontal="16dp"
+            tools:listitem="@layout/item_hasil_cari_apotek" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bg_lihat_lainnya_2"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_below="@+id/rv_hasil_cari_apotek_2"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_lihat_lainnya"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_lihat_lainnya_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="@string/lihat_lainnya"
+                android:textColor="@color/primary" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_righ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_lihat_lainnya_2"
+                android:src="@drawable/img_arrow_right_primary" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

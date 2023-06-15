@@ -5,6 +5,7 @@
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,19 +13,22 @@
         android:theme="@style/Theme.AplikasiMeddy"
         tools:targetApi="31">
         <activity
-            android:name=".RegisterActivity"
+            android:name=".CaraPilihApotekerActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="true"></activity>
+            android:name=".ui.screen.register.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.screen.login.LoginActivity"
+            android:exported="true" />
         <activity
             android:name=".OnboardingActivity"
             android:exported="true" />
         <activity
-            android:name=".Splashscreen2Activity"
+            android:name=".ui.screen.splash.Splashscreen2Activity"
             android:exported="false" />
         <activity
-            android:name=".SplashscreenActivity"
+            android:name=".ui.screen.splash.SplashscreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
