@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:text="Lihat Jadwal"
         android:layout_marginTop="220dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="55dp"
         android:textStyle="bold"
         android:textSize="14sp"
         android:textColor="@color/black"/>
