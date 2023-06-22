@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace 'com.example.aplikasimeddy'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.aplikasimeddy"
@@ -14,6 +14,7 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
+        buildConfigField("String","BASE_URL",'"http://192.168.1.5:5000/"')
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -52,8 +53,10 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     //retrofit
-//    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-//    implementation 'com.squareup.retrofit2:converter-gson'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation "com.squareup.okhttp3:okhttp:4.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
 
     // Room components
     implementation "androidx.room:room-runtime:2.5.1"
@@ -71,5 +74,8 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10"
     api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.8'
 
 }

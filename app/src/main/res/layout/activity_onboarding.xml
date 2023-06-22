@@ -5,5 +5,5 @@
     android:id="@+id/onboarding_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OnboardingActivity">
+    tools:context=".views.intro.OnboardingActivity">
 </androidx.constraintlayout.widget.ConstraintLayout>

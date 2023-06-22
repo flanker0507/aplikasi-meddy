@@ -1,102 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RiwayatFragment">
+    tools:context=".views.main.history.RiwayatFragment">
+
+    <FrameLayout
+        android:id="@+id/fl_bg_cari_apoteker"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@color/primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:text="@string/memilih_apoteker"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="20sp"
+            android:lineHeight="28dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+    </FrameLayout>
 
     <ImageView
-        android:id="@+id/imageView81"
-        android:layout_width="wrap_content"
-        android:layout_height="153dp"
-        android:layout_marginTop="-10dp"
-        android:src="@drawable/img_122" />
-
-    <TextView
-        android:id="@+id/textView57"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="Bagaimana cara memilih"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="50dp"/>
-
-    <TextView
-        android:id="@+id/textView58"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="apoteker?"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="80dp"/>
-
-    <TextView
-        android:id="@+id/textView59"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="198dp"
-        android:text="Pilih apotek terdekat atau apotek langganan anda "
-        android:textColor="#1B708E"
-        android:textSize="14sp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/imageView97"
-        android:layout_width="17dp"
-        android:layout_height="23dp"
+        android:id="@+id/iv_outline_location"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:src="@drawable/img_outline_location"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="198dp"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_bg_cari_apoteker"/>
 
     <TextView
-        android:id="@+id/textView60"
+        android:id="@+id/tv_statement_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="228dp"
-        android:text="Pilih konseling"
-        android:textColor="#1B708E"
-        android:textSize="14sp"
-        android:textStyle="bold" />
+        android:layout_marginStart="12dp"
+        android:text="Pilih apotek terdekat atau apotek langganan anda "
+        android:textColor="@color/primary"
+        android:textSize="10sp"
+        android:lineHeight="14dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_outline_location"
+        app:layout_constraintTop_toTopOf="@+id/iv_outline_location"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_outline_location"/>
 
     <ImageView
-        android:id="@+id/imageView98"
-        android:layout_width="17dp"
-        android:layout_height="23dp"
+        android:id="@+id/iv_outline_cursor_mouse"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
         android:src="@drawable/img_outline_cursor_mouse"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="228dp"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_outline_location"/>
 
     <TextView
-        android:id="@+id/textView61"
+        android:id="@+id/tv_statement_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="258dp"
-        android:text="Hubungi apoteker melalui kontak yang tersedia"
-        android:textColor="#1B708E"
-        android:textSize="14sp"
-        android:textStyle="bold" />
+        android:layout_marginStart="12dp"
+        android:text="@string/pilih_konseling"
+        android:textColor="@color/primary"
+        android:textSize="10sp"
+        android:lineHeight="14dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_outline_cursor_mouse"
+        app:layout_constraintTop_toTopOf="@+id/iv_outline_cursor_mouse"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_outline_cursor_mouse"/>
 
     <ImageView
-        android:id="@+id/imageView99"
-        android:layout_width="17dp"
-        android:layout_height="23dp"
+        android:id="@+id/iv_outline_chat"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
         android:src="@drawable/img_outline_chat"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="258dp"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_outline_cursor_mouse"/>
+
+    <TextView
+        android:id="@+id/tv_statement_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/hub_apoteker"
+        android:textColor="@color/primary"
+        android:textSize="10sp"
+        android:lineHeight="14dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_outline_chat"
+        app:layout_constraintTop_toTopOf="@+id/iv_outline_chat"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_outline_chat"/>
 
     <ImageView
-        android:id="@+id/imageView96"
-        android:layout_width="167dp"
-        android:layout_height="36dp"
-        android:layout_marginLeft="125dp"
-        android:layout_marginTop="400dp"
-        android:src="@drawable/img_121" />
-</FrameLayout>
+        android:id="@+id/iv_btn_pilih_apotek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_pilih_apotek"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_statement_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.main.search.KonsultasiFragment"
+    android:background="#1B708E">
+
+    <TextView
+        android:id="@+id/tv_konsultasi"
+        android:layout_width="351dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Konsultasikan dengan Apoteker secara real time lewat aplikasi WhatsApp kamu"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_konsultasi"
+        android:layout_width="288dp"
+        android:layout_height="234dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/img_57"
+        app:layout_constraintTop_toBottomOf="@+id/tv_konsultasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/iv_btn_konsultasi"
+        android:layout_width="187dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/img_58"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_konsultasi" />
+</androidx.constraintlayout.widget.ConstraintLayout>

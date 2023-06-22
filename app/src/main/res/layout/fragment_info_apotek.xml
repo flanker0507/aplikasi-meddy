@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoApotekFragment">
+    tools:context=".views.main.search.InfoApotekFragment">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -66,14 +66,15 @@
             android:layout_marginLeft="-5dp"/>
 
         <ImageView
-            android:id="@+id/imageView112"
+            android:id="@+id/iv_btn_maps"
             android:layout_width="89dp"
             android:layout_height="33dp"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="250dp"
             android:src="@drawable/img_169" />
+
         <ImageView
-            android:id="@+id/imageView113"
+            android:id="@+id/iv_btn_konseling"
             android:layout_width="89dp"
             android:layout_height="33dp"
             android:layout_marginLeft="240dp"

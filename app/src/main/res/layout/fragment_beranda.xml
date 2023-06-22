@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BerandaFragment">
+    tools:context=".views.main.dashboard.BerandaFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bg_frame_ice_blue"
@@ -17,7 +17,7 @@
 
         <!--start profile picture-->
         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/circle_iv_foto_profil"
+            android:id="@+id/civ_foto_profil"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginStart="16dp"
@@ -41,7 +41,7 @@
             android:text="@string/selamat_datang"
             android:textColor="@color/primary"
             android:textSize="14sp"
-            app:layout_constraintStart_toEndOf="@+id/circle_iv_foto_profil"
+            app:layout_constraintStart_toEndOf="@+id/civ_foto_profil"
             app:layout_constraintTop_toTopOf="parent" />
         <!--end text selamat datang-->
 

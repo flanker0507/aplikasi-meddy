@@ -208,4 +208,8 @@
     <string name="anjuran">Anjuran obat per konsumsi</string>
     <string name="obat">Obat</string>
     <string name="apotek">Apotek</string>
+    <string name="register_nama">Nama</string>
+    <string name="register_email">Email Aktif</string>
+    <string name="register_password">Kata Sandi</string>
+    <string name="register_confirm_password">Konfirmasi Sandi</string>
 </resources>

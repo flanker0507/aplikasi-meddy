@@ -16,10 +16,10 @@ class CaraPilihApotekerActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.ivBtnPilihApotek.setOnClickListener{
-            val fragment = CariApotekFragment()
-            supportFragmentManager.beginTransaction().replace(
-                R.id.frame_layout, fragment)
-                .commit()
+////            val fragment = CariApotekFragment()
+//            supportFragmentManager.beginTransaction().replace(
+//                R.id.frame_layout, fragment)
+//                .commit()
         }
     }
 }

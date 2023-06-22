@@ -5,14 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1B708E"
-    tools:context=".ui.screen.splash.Splashscreen2Activity">
+    tools:context=".views.splash.Splashscreen2Activity">
 
     <ImageView
+        android:id="@+id/splashscreen_logo_2"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:src="@drawable/img_logo_meddy"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/name_logo_splashscreen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logo_name"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintTop_toBottomOf="@+id/splashscreen_logo_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 

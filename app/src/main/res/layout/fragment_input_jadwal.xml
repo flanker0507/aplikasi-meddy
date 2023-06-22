@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InputJadwalFragment">
+    tools:context=".views.main.schedule.InputJadwalFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_input_jadwal"
@@ -88,6 +88,7 @@
                 <!-- Card View Waktu   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_pagi"
+                    android:foregroundTint="@color/primary"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="76dp"
@@ -141,7 +142,7 @@
                     android:layout_marginHorizontal="4dp"
                     android:background="@drawable/bg_card_input_waktu"
                     app:cardCornerRadius="20dp"
-                    app:layout_constraintEnd_toStartOf="@+id/cv_malam"
+                    app:layout_constraintEnd_toStartOf="@+id/cv_sore"
                     app:layout_constraintStart_toEndOf="@+id/cv_pagi"
                     app:layout_constraintTop_toBottomOf="@+id/sv_input_jadwal">
 
@@ -184,7 +185,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_malam"
+                    android:id="@+id/cv_sore"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="76dp"

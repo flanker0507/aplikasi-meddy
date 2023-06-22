@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.aplikasimeddy.databinding.ActivityMainBinding
-import com.example.aplikasimeddy.JadwalFragment
+import com.example.aplikasimeddy.views.main.dashboard.BerandaFragment
+import com.example.aplikasimeddy.views.main.history.RiwayatChatFragment
+import com.example.aplikasimeddy.views.main.schedule.JadwalFragment
+import com.example.aplikasimeddy.views.main.search.CariFragment
 
 class MainActivity : AppCompatActivity() {
 
