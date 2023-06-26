@@ -5,6 +5,6 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface ArtikelApiService {
-    @GET("/beritas")
+    @GET("/api/beritas")
     suspend fun getArtikel() : Response<List<ArtikelResponse>>
 }

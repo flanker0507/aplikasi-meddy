@@ -12,7 +12,8 @@ import java.util.concurrent.TimeUnit
 
 class ApiConfig {
     companion object {
-        const val BASE_URL = "http://192.168.1.5:5000/"
+//        const val BASE_URL = "http://192.168.1.5:5000/"
+        const val BASE_URL = "http://vijayasena.marsanix.com/"
 
         private val loggingInterceptor =
             if (BuildConfig.DEBUG) HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
