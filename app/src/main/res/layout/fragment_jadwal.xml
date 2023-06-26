@@ -47,12 +47,37 @@
             android:layout_height="wrap_content"
             android:text="Lihat Jadwal"
             android:layout_marginTop="16dp"
-            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:fontFamily="@font/montserrat_semi_bold"
             android:textSize="14sp"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/cl_lihat_jadwal"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_save_jadwal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lihat_jadwal"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:listitem="@layout/item_card_jadwal"/>
+
+        <TextView
+            android:id="@+id/tv_belum_ada_jadwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum ada jadwal"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

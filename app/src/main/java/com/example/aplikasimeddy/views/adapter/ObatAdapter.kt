@@ -3,34 +3,16 @@ package com.example.aplikasimeddy.views.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.aplikasimeddy.R
 import com.example.aplikasimeddy.model_responses.ObatResponse
 import com.example.aplikasimeddy.databinding.ItemHasilCariObatBinding
 
 class ObatAdapter : RecyclerView.Adapter<ObatAdapter.ObatHasilCariViewHolder>(){
 
     private var myList = emptyList<ObatResponse>()
+    var onItemClick : ((ObatResponse) -> Unit)? = null
     inner class ObatHasilCariViewHolder(val binding: ItemHasilCariObatBinding) : RecyclerView.ViewHolder(binding.root)
-
-//    private val diffCallBack = object : DiffUtil.ItemCallback<ObatResponse>(){
-//        override fun areItemsTheSame(oldItem: ObatResponse, newItem: ObatResponse): Boolean {
-//            return oldItem.uuid == newItem.uuid
-//        }
-//
-//        override fun areContentsTheSame(oldItem: ObatResponse, newItem: ObatResponse): Boolean {
-//            return oldItem == newItem
-//        }
-//
-//    }
-
-//    private val differ = AsyncListDiffer(this, diffCallBack)
-//    var obat: List<ObatResponse>
-//    get() = differ.currentList
-//    set(value) {differ.submitList(value)}
-
-//        class ObatHasilCariViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
-//            val imgObat: ImageView = itemView.findViewById(R.id.iv_obat_hasil_cari)
-//            val namaObat: TextView = itemView.findViewById(R.id.tv_obat_hasil_cari)
-//        }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ObatHasilCariViewHolder {
         return ObatHasilCariViewHolder(ItemHasilCariObatBinding.inflate(
@@ -38,8 +20,6 @@ class ObatAdapter : RecyclerView.Adapter<ObatAdapter.ObatHasilCariViewHolder>(){
             parent,
             false
         ))
-//        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_hasil_cari_obat, parent, false)
-//        return ObatHasilCariViewHolder(view)
     }
 
     override fun getItemCount(): Int {
@@ -49,19 +29,21 @@ class ObatAdapter : RecyclerView.Adapter<ObatAdapter.ObatHasilCariViewHolder>(){
     override fun onBindViewHolder(holder: ObatHasilCariViewHolder, position: Int) {
         holder.binding.apply {
             tvObatHasilCari.text = myList[position].name.toString()
-//            Picasso.get()
-//                .load(myList[position].thumbnailUrl)
-//                .into(ivObatHasilCari)
+            Glide.with(holder.itemView)
+                .load(myList[position].gambar)
+                .centerCrop()
+                .placeholder(R.drawable.img_amox_yusimox)
+                .into(holder.binding.ivObatHasilCari)
+//            Log.d("TAG", "imageObat: ${myList[position].gambar}")
         }
-//        val (imgObat, nmObat) = obatHasilCari[position]
-//        holder.imgObat.setImageResource(imgObat)
-//        holder.namaObat.text = nmObat
+        holder.itemView.setOnClickListener {
+            onItemClick?.invoke(myList[position])
+        }
     }
 
     fun setData(newList: List<ObatResponse>){
         myList = newList
         notifyDataSetChanged()
     }
-}
 
-//(private val obatHasilCari: ArrayList<ObatHasilCari>)
+}

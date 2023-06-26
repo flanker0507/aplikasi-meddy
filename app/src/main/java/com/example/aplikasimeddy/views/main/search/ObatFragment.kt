@@ -1,5 +1,6 @@
 package com.example.aplikasimeddy.views.main.search
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.aplikasimeddy.databinding.FragmentObatHasilCariBinding
+import com.example.aplikasimeddy.models.ObatHasilCari
 import com.example.aplikasimeddy.repositories.Repository
 import com.example.aplikasimeddy.view_models.MainViewModelFactory
 import com.example.aplikasimeddy.view_models.ObatViewModel
@@ -47,6 +49,16 @@ class ObatFragment : Fragment() {
                 Toast.makeText(requireContext(), response.code(), Toast.LENGTH_SHORT).show()
             }
         })
+
+        //searchview
+
+
+
+        obatAdapter.onItemClick = {
+            val intent = Intent(requireContext(), DetailObatActivity::class.java)
+            intent.putExtra("obat", it)
+            startActivity(intent)
+        }
     }
 
     private fun setupRecyclerView() {

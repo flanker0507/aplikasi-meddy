@@ -5,6 +5,7 @@ import com.example.aplikasimeddy.model_responses.ObatResponse
 import com.example.aplikasimeddy.model_responses.TestResponse
 import retrofit2.Response
 import retrofit2.http.GET
+import retrofit2.http.Query
 
 interface ObatApiService {
 
@@ -13,5 +14,8 @@ interface ObatApiService {
 
     @GET ("posts")
     suspend fun getCustomTest() : Response<List<TestResponse>>
+
+    @GET("/obats")
+    suspend fun searchObat(@Query("query") query: String): Response<List<ObatResponse>>
 
 }

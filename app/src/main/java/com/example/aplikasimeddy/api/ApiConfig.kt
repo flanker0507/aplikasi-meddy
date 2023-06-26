@@ -1,11 +1,13 @@
 package com.example.aplikasimeddy.api
 
 import androidx.viewbinding.BuildConfig
+import com.example.aplikasimeddy.api.interfaces.ArtikelApiService
 import com.example.aplikasimeddy.api.interfaces.ObatApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 import java.util.concurrent.TimeUnit
 
 class ApiConfig {
@@ -30,6 +32,10 @@ class ApiConfig {
 
         fun getObatApiService(): ObatApiService{
             return retrofit.create(ObatApiService::class.java)
+        }
+
+        fun getArtikelService(): ArtikelApiService{
+            return  retrofit.create(ArtikelApiService::class.java)
         }
 
 

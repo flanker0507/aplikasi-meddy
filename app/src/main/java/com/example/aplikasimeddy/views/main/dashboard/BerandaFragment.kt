@@ -4,38 +4,46 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.aplikasimeddy.views.main.search.InfoApotekFragment
 import com.example.aplikasimeddy.R
+import com.example.aplikasimeddy.databinding.FragmentBerandaBinding
 import com.example.aplikasimeddy.models.ApotekTerdekat
-import com.example.aplikasimeddy.views.adapter.ApotekTerdekatAdapter
+import com.example.aplikasimeddy.repositories.Repository
+import com.example.aplikasimeddy.view_models.ArtikelViewModel
+import com.example.aplikasimeddy.view_models.MainViewModelFactory
+import com.example.aplikasimeddy.views.adapter.ArtikelAdapter
 import com.example.aplikasimeddy.views.main.profile.ProfilFragment
 import de.hdodenhof.circleimageview.CircleImageView
 
 class BerandaFragment : Fragment() {
-    private lateinit var adapter: ApotekTerdekatAdapter
-    private lateinit var recyclerView: RecyclerView
-    private var apotekArrayList = ArrayList<ApotekTerdekat>()
 
-//    lateinit var namaApotek : Array<String>
-//    lateinit var alamatApotek : Array<String>
-//    lateinit var imgApotek : Array<Int>
+    private lateinit var binding: FragmentBerandaBinding
+    private lateinit var recyclerView: RecyclerView
+    private val artikelAdapter by lazy { ArtikelAdapter() }
+    private lateinit var viewModel: ArtikelViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_beranda, container, false)
+        binding = FragmentBerandaBinding.inflate(layoutInflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?){
         super.onViewCreated(view, savedInstanceState)
-        dataInitialize()
+        setupRecyclerView()
 
-        val moveProfile: CircleImageView = view.findViewById(R.id.civ_foto_profil)
+        //move to profile
+        val moveProfile: CircleImageView = binding.civFotoProfil
         moveProfile.setOnClickListener {
             val fragmentManager = requireActivity().supportFragmentManager
             val destination = ProfilFragment()
@@ -45,35 +53,30 @@ class BerandaFragment : Fragment() {
                 .commit()
         }
 
-        val layoutManager = LinearLayoutManager(context)
-        recyclerView = view.findViewById(R.id.rv_card_apotek_terdekat)
-        recyclerView.layoutManager = layoutManager
+        //search view
+        val searchView: SearchView = binding.searchViewBeranda
+        searchView.queryHint = "Cari nama obat, apotek"
+
+        //artikel
+        val repository = Repository()
+        val viewModelFactory = MainViewModelFactory(repository)
+        viewModel = ViewModelProvider(this, viewModelFactory).get(ArtikelViewModel::class.java)
+        viewModel.getArtikel()
+        viewModel.artikelResponse.observe(viewLifecycleOwner, Observer { response ->
+            if (response.isSuccessful){
+                response.body()?.let { artikelAdapter.setData(it) }
+            } else {
+                Toast.makeText(requireContext(), response.code(), Toast.LENGTH_SHORT).show()
+            }
+        })
+
+    }
+
+    private fun setupRecyclerView(){
+        recyclerView = binding.rvArtikel
         recyclerView.setHasFixedSize(true)
-        adapter = ApotekTerdekatAdapter(apotekArrayList) {
-            val fragmentManager = requireActivity().supportFragmentManager
-            val destination = InfoApotekFragment()
-            fragmentManager.beginTransaction().replace(
-                R.id.frame_layout, destination
-            )
-                .addToBackStack(null)
-                .commit()
-        }
-        recyclerView.adapter = adapter
-
+        recyclerView.adapter = artikelAdapter
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
     }
 
-    private fun dataInitialize(): ArrayList<ApotekTerdekat> {
-        val namaApotek = resources.getStringArray(R.array.nama_apotek)
-        val alamatApotek = resources.getStringArray(R.array.alamat_apotek)
-        val imgApotek = resources.obtainTypedArray(R.array.img_apotek)
-        for (i in namaApotek.indices){
-            val apotekTerdekat = ApotekTerdekat(
-                namaApotek[i],
-                alamatApotek[i],
-                imgApotek.getResourceId(i, -1)
-            )
-            apotekArrayList.add(apotekTerdekat)
-        }
-        return apotekArrayList
-    }
 }

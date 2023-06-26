@@ -11,6 +11,10 @@ class Repository{
 
     suspend fun getObat() = getObat.getObat()
 
+    private val getArtikel = ApiConfig.getArtikelService()
+
+    suspend fun getArtikel() = getArtikel.getArtikel()
+
 //    suspend fun getCustomTest(): Response<List<TestResponse>>{
 //        return ApiService.test.getCustomTest()
 //    }

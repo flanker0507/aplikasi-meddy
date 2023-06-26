@@ -45,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cl_input_jadwal">
 
@@ -56,15 +57,15 @@
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/bg_sv_beranda">
 
                 <DatePicker
                     android:id="@+id/dp_input_jadwal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center" />
 
             </FrameLayout>
 
@@ -81,18 +82,17 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:paddingHorizontal="16dp"
                 android:layout_height="116dp"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
                 <!-- Card View Waktu   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_pagi"
-                    android:foregroundTint="@color/primary"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="76dp"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
                     android:background="@drawable/bg_card_input_waktu"
                     app:cardCornerRadius="20dp">
 
@@ -137,9 +137,9 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_siang"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="76dp"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
                     android:background="@drawable/bg_card_input_waktu"
                     app:cardCornerRadius="20dp"
                     app:layout_constraintEnd_toStartOf="@+id/cv_sore"
@@ -187,9 +187,9 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_sore"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="76dp"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
                     android:background="@drawable/bg_card_input_waktu"
                     app:cardCornerRadius="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -237,6 +237,146 @@
 
             </LinearLayout>
 
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_bg_time_picker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_time_picker"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <TextView
+                            android:id="@+id/tv_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:layout_marginTop="8dp"
+                            android:text="00"
+                            android:textColor="@color/white"
+                            android:textSize="36sp"
+                            app:layout_constraintEnd_toStartOf="@+id/tv_minute"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_colon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:text=":"
+                            android:textColor="@color/white"
+                            android:textSize="60sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv_hour"
+                            app:layout_constraintEnd_toStartOf="@+id/tv_minute"
+                            app:layout_constraintStart_toEndOf="@+id/tv_hour"
+                            app:layout_constraintTop_toTopOf="@+id/tv_hour" />
+
+                        <TextView
+                            android:id="@+id/tv_minute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="00"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/white"
+                            android:textSize="36sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/tv_hour"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/tv_sblm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Sebelum makan"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cl_bg_time_picker" />
+
+                    <TextView
+                        android:id="@+id/tv_ssdh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="12dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Sesudah makan"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_ktk"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_sblm" />
+
+                    <TextView
+                        android:id="@+id/tv_ktk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Ketika makan"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/radioButtonContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cl_bg_time_picker">
+
+                        <RadioButton
+                            android:id="@+id/rd_sblm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv_sblm"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/tv_sblm" />
+
+                        <RadioButton
+                            android:id="@+id/rd_ssdh"
+                            style=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv_ssdh"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/tv_ssdh" />
+
+                        <RadioButton
+                            android:id="@+id/rd_ktk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv_ktk"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/tv_ktk" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
             <TextView
                 android:id="@+id/tv_dosis"
                 android:layout_width="wrap_content"
@@ -251,13 +391,13 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_dosis"
-                android:layout_marginHorizontal="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="88dp"
                 android:layout_gravity="center"
+                android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/bg_card_input_waktu"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"

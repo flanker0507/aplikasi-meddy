@@ -77,8 +77,8 @@
         <item>Amoxicillin Novapharin sirup kering 125 ml</item>
         <item>AMEMOX Sirup 60 ml</item>
     </string-array>
-    
-    
+
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -172,7 +172,7 @@
     <string name="cd_icon_clock">Icon Clock</string>
     <string name="cd_line">Line</string>
     <string name="foto_obat">Foto Obat</string>
-    <string name="tv_apotek_terdekat">Apotek Terdekat</string>
+    <string name="artikel">Artikel &amp; Berita</string>
     <string name="meddy">MEDDY</string>
     <string name="lokasimu">Lokasimu</string>
     <string name="nama_lokasi">Teluk Sasah</string>
@@ -212,4 +212,7 @@
     <string name="register_email">Email Aktif</string>
     <string name="register_password">Kata Sandi</string>
     <string name="register_confirm_password">Konfirmasi Sandi</string>
+    <string name="ibuprofen">Manfaat Ibuprofen Serta Efek Samping..</string>
+    <string name="tanggal_artikel">26 Juni 2023</string>
+
 </resources>

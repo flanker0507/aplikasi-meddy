@@ -4,19 +4,18 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.aplikasimeddy.room.dao.UserDao
-import com.example.aplikasimeddy.room.model.User
+import com.example.aplikasimeddy.room.dao.JadwalUserDao
+import com.example.aplikasimeddy.room.model.Jadwal
 
-@Database(entities = [User::class], version = 1, exportSchema = false)
-abstract class UserDatabase : RoomDatabase() {
-
-    abstract fun userDao(): UserDao
+@Database(entities = [Jadwal::class], version = 1, exportSchema = false)
+abstract class JadwalUserDatabase : RoomDatabase() {
+    abstract fun jadwalUserDao(): JadwalUserDao
 
     companion object {
         @Volatile
-        private var INSTANCE: UserDatabase? = null
+        private var INSTANCE: JadwalUserDatabase? = null
 
-        fun getDatabase(context: Context): UserDatabase {
+        fun getDatabase(context: Context): JadwalUserDatabase {
             val tempInstance = INSTANCE
             if (tempInstance != null) {
                 return tempInstance
@@ -24,8 +23,8 @@ abstract class UserDatabase : RoomDatabase() {
             synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    UserDatabase::class.java,
-                    "user_database"
+                    JadwalUserDatabase::class.java,
+                    "jadwal_user_database"
                 ).build()
                 INSTANCE = instance
                 return instance

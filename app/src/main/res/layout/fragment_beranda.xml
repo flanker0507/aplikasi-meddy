@@ -16,7 +16,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <!--start profile picture-->
-        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/civ_foto_profil"
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -163,46 +164,66 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-    <SearchView
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view_beranda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/bg_sv_beranda"
-        android:iconifiedByDefault="false"
-        android:queryHint="Cari nama obat, apotek"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="Cari nama obat, apotek"
+        app:iconifiedByDefault="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_pengingat" />
 
-
-    <!--start text apotek terdekat-->
-    <TextView
-        android:id="@+id/text_apotek_terdekat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/tv_apotek_terdekat"
-        android:textColor="#1B708E"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_view_beranda" />
-    <!--end text apotek terdekat-->
-
-    <!--start view apotek terdekat-->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_card_apotek_terdekat"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_berita"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginHorizontal="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_artikel"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_apotek_terdekat"
-        tools:listitem="@layout/item_list_apotek_terdekat" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view_beranda"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!--start text apotek terdekat-->
+        <TextView
+            android:id="@+id/text_apotek_terdekat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/artikel"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <!--end text apotek terdekat-->
+
+        <!--start view apotek terdekat-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_artikel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_apotek_terdekat"
+            tools:listitem="@layout/item_list_artikel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

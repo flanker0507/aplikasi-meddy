@@ -3,14 +3,14 @@
 
     <item android:title="Beranda"
         android:id="@+id/beranda"
-        android:icon="@drawable/outline_home_24"/>
+        android:icon="@drawable/dashboard"/>
     <item android:title="Cari"
         android:id="@+id/cari"
-        android:icon="@drawable/outline_search_24"/>
+        android:icon="@drawable/search"/>
     <item android:title="Jadwal"
         android:id="@+id/jadwal"
-        android:icon="@drawable/outline_calendar_month_24"/>
+        android:icon="@drawable/calendar"/>
     <item android:title="Riwayat"
         android:id="@+id/riwayat"
-        android:icon="@drawable/outline_description_24"/>
+        android:icon="@drawable/riwayat"/>
 </menu>
