@@ -65,18 +65,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             tools:listitem="@layout/item_card_jadwal"/>
 
-        <TextView
-            android:id="@+id/tv_belum_ada_jadwal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Belum ada jadwal"
-            android:fontFamily="@font/montserrat_semi_bold"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+<!--        <TextView-->
+<!--            android:id="@+id/tv_belum_ada_jadwal"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Belum ada jadwal"-->
+<!--            android:fontFamily="@font/montserrat_semi_bold"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"/>-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

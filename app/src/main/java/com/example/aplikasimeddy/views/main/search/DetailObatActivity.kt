@@ -1,9 +1,11 @@
 package com.example.aplikasimeddy.views.main.search
 
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.example.aplikasimeddy.R
 import com.example.aplikasimeddy.model_responses.ObatResponse
 
@@ -14,6 +16,7 @@ class DetailObatActivity : AppCompatActivity() {
 
         val obat = intent.getParcelableExtra<ObatResponse>("obat")
         if (obat != null){
+            val gambar: ImageView = findViewById(R.id.iv_informasi_obat)
             val nama : TextView = findViewById(R.id.tv_nama_obat_detail)
             val deskripsi : TextView = findViewById(R.id.tv_deskripsi_obat)
             val jenis : TextView = findViewById(R.id.tv_jenis_obat)
@@ -21,6 +24,7 @@ class DetailObatActivity : AppCompatActivity() {
             val kegunaan : TextView = findViewById(R.id.tv_kegunaan_obat)
             val efek : TextView = findViewById(R.id.tv_efek_samping_obat)
 
+            Glide.with(this).load(obat.gambar).centerCrop().into(gambar)
             nama.text = obat.name
             deskripsi.text = obat.deskripsi
             jenis.text = obat.jenis

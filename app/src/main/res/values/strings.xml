@@ -26,7 +26,7 @@
     <string name="apotek_terdekat">Apotek Terdekat</string>
     <string name="pengingat">Pengingat</string>
     <string name="nama_obat">Amoxicillin</string>
-    <string name="waktu">07:00 Pagi</string>
+    <string name="waktu">10:15 Pagi</string>
 
     <!--    card Apotek Terdekat-->
     <string-array name="nama_apotek">
@@ -213,6 +213,6 @@
     <string name="register_password">Kata Sandi</string>
     <string name="register_confirm_password">Konfirmasi Sandi</string>
     <string name="ibuprofen">Manfaat Ibuprofen Serta Efek Samping..</string>
-    <string name="tanggal_artikel">26 Juni 2023</string>
+    <string name="tanggal_artikel">25 Juni 2023</string>
 
 </resources>

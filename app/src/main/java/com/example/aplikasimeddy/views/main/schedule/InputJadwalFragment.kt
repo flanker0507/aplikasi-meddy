@@ -60,13 +60,13 @@ class InputJadwalFragment : Fragment() {
         // button Simpan onClick, save date and move to next page
         val fragmentManager = requireActivity().supportFragmentManager
         val destination = JadwalFragment()
-        val text = view.findViewById<TextView>(R.id.tv_belum_ada_jadwal)
+//        val text = view.findViewById<TextView>(R.id.tv_belum_ada_jadwal)
 
         val simpan: ImageView = binding.ivBtnSimpan
         simpan.setOnClickListener {
             // insert jadwal to database
             insertDataToDatabase()
-            text.visibility = View.GONE
+//            text.visibility = View.GONE
             fragmentManager.beginTransaction().replace(
                 R.id.frame_layout,
                 destination

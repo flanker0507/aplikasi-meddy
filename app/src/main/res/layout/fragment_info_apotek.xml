@@ -51,19 +51,6 @@
             android:textColor="@color/black"
             android:layout_marginLeft="115dp"
             android:layout_marginTop="225dp"/>
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="320dp"/>
-
-        <ImageView
-            android:id="@+id/imageView111"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_marginTop="300dp"
-            android:layout_marginLeft="-5dp"/>
 
         <ImageView
             android:id="@+id/iv_btn_maps"
@@ -80,6 +67,18 @@
             android:layout_marginLeft="240dp"
             android:layout_marginTop="250dp"
             android:src="@drawable/img_170" />
+
+        <TextView
+            android:id="@+id/tv_list_obat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List obat yang tersedia"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/iv_btn_maps"/>
 
 
         <ImageView
@@ -366,6 +365,7 @@
             android:src="@drawable/img_163" />
 
         <TextView
+            android:id="@+id/tv_paracetamol"
             android:layout_width="78dp"
             android:layout_height="46dp"
             android:layout_marginLeft="80dp"
@@ -374,7 +374,15 @@
             android:textSize="10sp"
             android:textStyle="bold" />
 
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habis"
+            android:layout_marginTop="60sp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_paracetamol"/>
 
 
         <ImageView

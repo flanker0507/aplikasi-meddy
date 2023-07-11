@@ -9,13 +9,13 @@ import retrofit2.http.Query
 
 interface ObatApiService {
 
-    @GET("/api/obats")
+    @GET("/obats")
     suspend fun getObat() : Response<List<ObatResponse>>
 
     @GET ("posts")
     suspend fun getCustomTest() : Response<List<TestResponse>>
 
-    @GET("/api/obats")
+    @GET("/obats")
     suspend fun searchObat(@Query("query") query: String): Response<List<ObatResponse>>
 
 }
