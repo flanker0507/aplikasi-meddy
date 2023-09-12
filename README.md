@@ -1,0 +1,2 @@
+# Meddy (Medicine Teddy)
+Meddy adalah aplikasi mobile yang menyediakan layanan informasi obat-obatan terpercaya, pencarian lokasi apotek terdekat, serta konsultasi dengan apoteker secara online. Dengan menggunakan Meddy, pengguna dapat dengan mudah mencari informasi tentang obat-obatan yang dibutuhkan, seperti kandungan, efek samping, dan aturan minum. Selain itu, aplikasi ini juga menyediakan layanan pencarian lokasi apotek terdekat yang memudahkan pengguna dalam membeli obat yang diperlukan.
